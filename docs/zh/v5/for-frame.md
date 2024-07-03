@@ -1,6 +1,6 @@
 # 用于 Vue React
 
-快速了解可查看[视频教程](/v5/video-course.html)。
+快速了解可查看[视频教程](/zh/v5/video-course.html)。
 
 ## Vue2
 
@@ -95,9 +95,9 @@ export default Vue.extend({
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 【注意】编辑器配置中 `onXxx` 格式的生命周期函数，**必须通过 Vue 事件来传递，不可以放在 `editorConfig` 中**，例如：
 
@@ -152,7 +152,7 @@ methods: {
 
 ### 调用 API
 
-当编辑器渲染完成之后，通过 `this.editor` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/v5/API.html) 。
+当编辑器渲染完成之后，通过 `this.editor` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
 
 ```xml
 <template>
@@ -280,9 +280,9 @@ export default {
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 【注意】编辑器配置中 `onXxx` 格式的生命周期函数，**必须通过 Vue 事件来传递，不可以放在 `editorConfig` 中**，例如：
 
@@ -345,7 +345,7 @@ return {
 
 ### 调用 API
 
-当编辑器渲染完成之后，通过 `editorRef.value` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/v5/API.html) 。
+当编辑器渲染完成之后，通过 `editorRef.value` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
 
 ```xml
 <template>
@@ -465,13 +465,13 @@ export default MyEditor
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 ### 调用 API
 
-当编辑器渲染完成之后，即可调用它的 API 。参考 [编辑器 API](/v5/API.html) 。
+当编辑器渲染完成之后，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
 
 ```jsx
 function insertText() {

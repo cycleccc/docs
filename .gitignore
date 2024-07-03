@@ -119,3 +119,5 @@ bak/
 
 .cache
 
+docs/.vitepress/dist
+docs/.vitepress/cache

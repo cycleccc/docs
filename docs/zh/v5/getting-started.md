@@ -1,6 +1,6 @@
 # 快速开始
 
-快速了解可查看[视频教程](/v5/video-course.html)。用于 Vue React 参考[这里](./for-frame.md)。
+快速了解可查看[视频教程](/zh/v5/video-course.html)。用于 Vue React 参考[这里](./for-frame.md)。
 
 ## 创建空白编辑器
 

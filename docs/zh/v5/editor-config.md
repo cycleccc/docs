@@ -33,7 +33,7 @@ editorConfig.placeholder = '请输入内容...'
 editorConfig.readOnly = true
 ```
 
-只读状态可通过 `editor.enable()` 和 `editor.disable()` 切换，详见 [API](/v5/API.html) 。
+只读状态可通过 `editor.enable()` 和 `editor.disable()` 切换，详见 [API](/zh/v5/API.html) 。
 
 ## autoFocus
 
@@ -96,14 +96,14 @@ createEditor 时设置 `mode: 'simple'` 可隐藏选中文本时的 hoverbar 。
 
 ```ts
 editorConfig.hoverbarKeys = {
-    'link': {
-        // 重写 link 元素的 hoverbar
-        menuKeys: ['editLink', 'unLink', 'viewLink'],
-    },
-    'image': {
-        // 清空 image 元素的 hoverbar
-        menuKeys: [],
-    }
+  link: {
+    // 重写 link 元素的 hoverbar
+    menuKeys: ['editLink', 'unLink', 'viewLink'],
+  },
+  image: {
+    // 清空 image 元素的 hoverbar
+    menuKeys: [],
+  }
 }
 ```
 
@@ -157,7 +157,7 @@ editorConfig.onChange = (editor: IDomEditor) => {   // TS 语法
 
 ## onDestroyed
 
-编辑器销毁时的回调函数。调用 `editor.destroy()` 即可销毁编辑器，详见 [API](/v5/API.html) 。
+编辑器销毁时的回调函数。调用 `editor.destroy()` 即可销毁编辑器，详见 [API](/zh/v5/API.html) 。
 
 ```ts
 import { IDomEditor } from '@wangeditor/editor'

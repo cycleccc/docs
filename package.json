@@ -1,19 +1,26 @@
 {
-  "private": "true",
   "name": "vuepress-demo",
+  "type": "module",
   "version": "1.0.0",
+  "private": "true",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-search": "^2.0.0-beta.41",
-    "vuepress": "2.0.0-beta.41"
+    "@antfu/eslint-config": "^2.21.2",
+    "eslint": "9.5.0",
+    "globby": "^14.0.2",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.2.3"
   }
 }
