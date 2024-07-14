@@ -2,7 +2,7 @@ import { createRequire } from 'module'
 import { defineConfig, type DefaultTheme } from 'vitepress'
 
 const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
+const pkg = require('@wangeditor-next/editor/package.json')
 
 export const en = defineConfig({
   lang: 'en-US',
@@ -35,21 +35,21 @@ function nav(): DefaultTheme.NavItem[] {
       link: '/en/guide/what-is-vitepress',
       activeMatch: '/guide/'
     },
-    {
-      text: 'Reference',
-      link: '/en/reference/site-config',
-      activeMatch: '/reference/'
-    },
+    // {
+    //   text: 'Reference',
+    //   link: '/en/reference/site-config',
+    //   activeMatch: '/reference/'
+    // },
     {
       text: pkg.version,
       items: [
         {
           text: 'Changelog',
-          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/CHANGELOG.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CHANGELOG.md'
         },
         {
           text: 'Contributing',
-          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/.github/contributing.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CONTRIBUTING.md'
         }
       ]
     }

@@ -19,8 +19,8 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
     "eslint": "9.5.0",
-    "globby": "^14.0.2",
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "^1.2.3"
+    "vitepress": "^1.2.3",
+    "vitepress-plugin-search": "1.0.4-alpha.22"
   }
 }
