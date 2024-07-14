@@ -12,12 +12,12 @@ export const en = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      '/en/guide/': { base: '/en/guide/getting-started/', items: sidebarGuide() },
+      '/en/reference/': { base: '/en/reference/', items: sidebarReference() }
     },
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
 
@@ -32,12 +32,12 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'Guide',
-      link: '/guide/what-is-vitepress',
+      link: '/en/guide/what-is-vitepress',
       activeMatch: '/guide/'
     },
     {
       text: 'Reference',
-      link: '/reference/site-config',
+      link: '/en/reference/site-config',
       activeMatch: '/reference/'
     },
     {
@@ -45,11 +45,11 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           text: 'Changelog',
-          link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/CHANGELOG.md'
         },
         {
           text: 'Contributing',
-          link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/.github/contributing.md'
         }
       ]
     }

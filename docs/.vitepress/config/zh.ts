@@ -6,18 +6,18 @@ const pkg = require('vitepress/package.json')
 
 export const zh = defineConfig({
   lang: 'zh-Hans',
-  description: '由 Vite 和 Vue 驱动的静态站点生成器',
+  description: '开源富文本编辑器',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/zh/guide/': { base: '/zh/guide/', items: sidebarGuide() },
-      '/zh/reference/': { base: '/zh/reference/', items: sidebarReference() }
+      '/guide/': { base: '/guide/', items: sidebarGuide() },
+    //   '/reference/': { base: '/zh/reference/', items: sidebarReference() }
     },
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
 
@@ -56,7 +56,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '指南',
-      link: '/zh/guide/what-is-vitepress',
+      link: '/zh/guide/getting-started',
       activeMatch: '/zh/guide/'
     },
     {
@@ -69,11 +69,11 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           text: '更新日志',
-          link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/CHANGELOG.md'
         },
         {
           text: '参与贡献',
-          link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
+          link: 'https://github.com/cycleccc/wangEditor-next/blob/main/.github/contributing.md'
         }
       ]
     }

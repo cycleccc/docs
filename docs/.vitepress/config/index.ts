@@ -6,7 +6,8 @@ import { zh } from './zh'
 export default defineConfig({
   ...shared,
   locales: {
-    root: { label: 'English', ...en },
-    zh: { label: '简体中文', ...zh },
+    // root: { label: 'English', ...en },
+    root: { label: '简体中文', ...zh },
+    en:{ label: 'English', ...en }
   }
 })

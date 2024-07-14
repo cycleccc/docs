@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 import { search as zhSearch } from './zh'
 
 export const shared = defineConfig({
-  title: 'VitePress',
+  title: 'wangEditor-next',
 
   rewrites: {
-    'en/:rest*': ':rest*'
+    'zh/:rest*': ':rest*'
   },
 
   lastUpdated: true,
@@ -46,10 +46,10 @@ export const shared = defineConfig({
   ],
 
   themeConfig: {
-    logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
+    logo: { src: 'image/logo.png', width: 24, height: 24 },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/cycleccc/wangEditor-next' }
     ],
 
     search: {
