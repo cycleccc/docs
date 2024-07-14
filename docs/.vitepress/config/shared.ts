@@ -33,8 +33,8 @@ export const shared = defineConfig({
 
     /* prettier-ignore */
     head: [
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/iamge/logo.png' }],
-        ['link', { rel: 'icon', type: 'image/png', href: '/iamge/logo.png' }],
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/image/logo.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: '/image/logo.png' }],
         ['meta', { name: 'theme-color', content: '#5f67ee' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'en' }],
@@ -46,7 +46,7 @@ export const shared = defineConfig({
     ],
 
     themeConfig: {
-        logo: { src: 'image/logo.png', width: 24, height: 24 },
+        logo: { src: '/image/logo.png', width: 24, height: 24 },
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/cycleccc/wangEditor-next' }
