@@ -1,20 +1,20 @@
 # wangEditor v5 doc
 
-线上地址：https://www.wangeditor.com/
+线上地址：https://cycleccc.github.io/docs/
 
 ## 本地开发
 
-使用 [VuePress v2](https://v2.vuepress.vuejs.org/zh/) 搭建的文档。
+使用 [VitePress](https://vitepress.dev/zh/) 搭建的文档。
 
-全局安装 vuepress `npm install vuepress -g`
+全局安装 vuepress `npm install vitepress -g`
 
 下载当前代码，然后启动
 
 ```shell
-yarn     # 安装依赖
-yarn dev # 启动，浏览器访问 http://localhost:8080/
+pnpm install     # 安装依赖
+yarn docs:dev # 启动，浏览器访问
 ```
 
 ## 发布上线
 
-提交 main 分支代码，即可触发 [github actions](https://github.com/wangeditor-team/wangEditor-v5-doc/actions) 并发布上线。
+提交 main 分支代码，即可触发 [github actions](https://github.com/cycleccc/docs/actions) 并发布上线。
