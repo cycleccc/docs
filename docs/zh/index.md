@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 什么是 wangEditor-next?
-      link: /zh/guide/index
+      link: /guide/index
     - theme: alt
       text: 快速开始
-      link: /zh/guide/getting-started
+      link: /guide/getting-started
     - theme: alt
       text: GitHub
       link: https://github.com/cycleccc/wangEditor-next
