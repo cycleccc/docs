@@ -10,8 +10,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
@@ -21,6 +19,7 @@
     "eslint": "9.5.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.2.3",
+    "@wangeditor-next/editor":"latest",
     "vitepress-plugin-search": "1.0.4-alpha.22"
   }
 }
