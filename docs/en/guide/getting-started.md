@@ -9,7 +9,7 @@ You can see [demo](https://www.wangeditor.com/demo/index.html?lang=en) page sour
 ### Import CSS and define style
 
 ```html
-<link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+<link href="https://unpkg.com/@wangeditor-next/editor@latest/dist/css/style.css" rel="stylesheet">
 <style>
   #editor—wrapper {
     border: 1px solid #ccc;
@@ -38,7 +38,7 @@ You can see [demo](https://www.wangeditor.com/demo/index.html?lang=en) page sour
 
 
 ```html
-<script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+<script src="https://unpkg.com/@wangeditor-next/editor@latest/dist/index.js"></script>
 <script>
 const { createEditor, createToolbar } = window.wangEditor
 

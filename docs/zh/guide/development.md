@@ -25,7 +25,7 @@ core 是核心 API ，editor 负责汇总集成。所有的具体功能，都分
 第一，定义菜单 class
 
 ```ts
-import { IButtonMenu, IDomEditor } from '@wangeditor/editor'
+import { IButtonMenu, IDomEditor } from '@wangeditor-next/editor'
 
 class MyButtonMenu implements IButtonMenu {   // TS 语法
 // class MyButtonMenu {                       // JS 语法
@@ -77,7 +77,7 @@ class MyButtonMenu implements IButtonMenu {   // TS 语法
 第一，定义菜单 class
 
 ```ts
-import { IDomEditor, ISelectMenu } from '@wangeditor/editor'
+import { IDomEditor, ISelectMenu } from '@wangeditor-next/editor'
 
 class MySelectMenu implements ISelectMenu {   // TS 语法
 // class MySelectMenu {                       // JS 语法
@@ -138,7 +138,7 @@ class MySelectMenu implements ISelectMenu {   // TS 语法
 第一，定义菜单 class
 
 ```ts
-import { IDomEditor, IDropPanelMenu } from '@wangeditor/editor'
+import { IDomEditor, IDropPanelMenu } from '@wangeditor-next/editor'
 
 class MyDropPanelMenu implements IDropPanelMenu {    // TS 语法
 // class MyDropPanelMenu {                           // JS 语法
@@ -206,7 +206,7 @@ class MyDropPanelMenu implements IDropPanelMenu {    // TS 语法
 第一，定义菜单 class
 
 ```ts
-import { IDomEditor, IModalMenu, SlateNode } from '@wangeditor/editor'
+import { IDomEditor, IModalMenu, SlateNode } from '@wangeditor-next/editor'
 
 class MyModalMenu implements IModalMenu {    // TS 语法
 // class MyModalMenu {                       // JS 语法
@@ -303,7 +303,7 @@ const menu1Conf = {
 第一，如果只注册一个菜单，没有别的功能了，则推荐使用 `registerMenu`
 
 ```ts
-import { Boot } from '@wangeditor/editor'
+import { Boot } from '@wangeditor-next/editor'
 
 Boot.registerMenu(menu1Conf)
 ```
@@ -312,7 +312,7 @@ Boot.registerMenu(menu1Conf)
 
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {   // TS 语法
 // const module = {                      // JS 语法
@@ -344,7 +344,7 @@ Boot.registerModule(module)
 在实际开发中，会用到很多 editor [API](./API.md) 。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 function withBreakAndDelete<T extends IDomEditor>(editor: T): T {   // TS 语法
 // function withBreakAndDelete(editor) {                            // JS 语法
@@ -384,7 +384,7 @@ function withBreakAndDelete<T extends IDomEditor>(editor: T): T {   // TS 语法
 第一，如果你仅仅注册一个插件，没有别的需求，则推荐使用 `registerPlugin`
 
 ```ts
-import { Boot } from '@wangeditor/editor'
+import { Boot } from '@wangeditor-next/editor'
 
 Boot.registerPlugin(withBreakAndDelete)
 ```
@@ -392,7 +392,7 @@ Boot.registerPlugin(withBreakAndDelete)
 第二，如果你除了注册插件之外，同时还注册其他功能，则推荐使用 `registerModule`
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {   // TS 语法
 // const module = {                      // JS 语法
@@ -454,7 +454,7 @@ const myResume: AttachmentElement = {  // TS 语法
 第一，定义一个插件，重写 `isInline` 和 `isVoid` API
 
 ```ts
-import { DomEditor, IDomEditor } from '@wangeditor/editor'
+import { DomEditor, IDomEditor } from '@wangeditor-next/editor'
 
 function withAttachment<T extends IDomEditor>(editor: T) {  // TS 语法
 // function withAttachment(editor) {                        // JS 语法
@@ -500,7 +500,7 @@ yarn add snabbdom --peer
 
 ```ts
 import { h, VNode } from 'snabbdom'
-import { IDomEditor, SlateElement } from '@wangeditor/editor'
+import { IDomEditor, SlateElement } from '@wangeditor-next/editor'
 
 /**
  * 渲染“附件”元素到编辑器
@@ -561,7 +561,7 @@ const renderElemConf = {
 第一，如果你只想注册一个 renderElem ，没有其他功能，推荐使用 `registerRenderElem`
 
 ```js
-import { Boot } from '@wangeditor/editor'
+import { Boot } from '@wangeditor-next/editor'
 
 Boot.registerRenderElem(renderElemConf)
 ```
@@ -569,7 +569,7 @@ Boot.registerRenderElem(renderElemConf)
 第二，如果你除了 renderElem 同时还要注册其他功能，推荐使用 `registerModule`
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {   // TS 语法
 // const module = {                      // JS 语法
@@ -599,7 +599,7 @@ Boot.registerModule(module)
 以下是代码示例，完整源码可参考[这里](https://github.com/wangeditor-team/wangEditor-plugin-upload-attachment/blob/main/src/module/elem-to-html.ts)
 
 ```ts
-import { SlateElement } from '@wangeditor/editor'
+import { SlateElement } from '@wangeditor-next/editor'
 
 /**
  * 生成“附件”元素的 HTML
@@ -650,7 +650,7 @@ const elemToHtmlConf = {
 第一，如果你只想注册 elemToHtml ，没有其他需求，则推荐使用 `registerElemToHtml`
 
 ```js
-import { Boot } from '@wangeditor/editor'
+import { Boot } from '@wangeditor-next/editor'
 
 Boot.registerElemToHtml(elemToHtmlConf)
 ```
@@ -658,7 +658,7 @@ Boot.registerElemToHtml(elemToHtmlConf)
 第二，如果你除了注册 elemToHtml 之外，还需要注册其他功能，则推荐使用 `registerModule`
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {   // TS 语法
 // const module = {                      // JS 语法
@@ -687,7 +687,7 @@ Boot.registerModule(module)
 #### 定义 parseElemHtml 函数
 
 ```ts
-import { IDomEditor, SlateDescendant, SlateElement } from '@wangeditor/editor'
+import { IDomEditor, SlateDescendant, SlateElement } from '@wangeditor-next/editor'
 
 /**
  * 解析 HTML 字符串，生成“附件”元素
@@ -731,7 +731,7 @@ const parseHtmlConf = {
 第一，如果你只想注册一个 parseElemHtml ，没有别的功能，则推荐 `registerParseElemHtml`
 
 ```ts
-import { Boot } from '@wangeditor/editor'
+import { Boot } from '@wangeditor-next/editor'
 
 Boot.registerParseElemHtml(parseHtmlConf)
 ```
@@ -739,7 +739,7 @@ Boot.registerParseElemHtml(parseHtmlConf)
 第二，如果你除了想注册 parseElemHtml ，还想注册其他功能，则推荐 `registerModule`
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {   // TS 语法
 // const module = {                      // JS 语法

@@ -4,7 +4,7 @@ If you first-time use wangEditor, please see [Get Started](./getting-started.md)
 
 
 ```ts{5}
-import { IEditorConfig } from '@wangeditor/editor'
+import { IEditorConfig } from '@wangeditor-next/editor'
 
 const editorConfig: Partial<IEditorConfig> = {  // TS syntax
 // const editorConfig = {                       // JS syntax
@@ -62,7 +62,7 @@ When you need to set `false`?
 See [demo](https://www.wangeditor.com/demo/max-length.html?lang=en).
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.maxLength = 1000
 editorConfig.onMaxLength = function (editor: IDomEditor) {   // TS syntax
@@ -114,7 +114,7 @@ editorConfig.hoverbarKeys = {
 You can also custom a match function instead of use element type.
 
 ```ts
-import { SlateNode, IDomEditor } from '@wangeditor/editor'
+import { SlateNode, IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.hoverbarKeys = {
     'text': {
@@ -133,7 +133,7 @@ You can see [source code](https://github.com/wangeditor-team/wangEditor/blob/mas
 ## onCreated
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onCreated = (editor: IDomEditor) => {   // TS syntax
 // editorConfig.onCreated = (editor) => {            // JS syntax
@@ -144,7 +144,7 @@ editorConfig.onCreated = (editor: IDomEditor) => {   // TS syntax
 ## onChange
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onChange = (editor: IDomEditor) => {  // TS syntax
 // editorConfig.onChange = (editor:) => {             // JS syntax
@@ -158,7 +158,7 @@ editorConfig.onChange = (editor: IDomEditor) => {  // TS syntax
 You can use `editor.destroy()` to destroy editor. see [API](./API.md).
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onDestroyed = (editor: IDomEditor) => {  // TS syntax
 // editorConfig.onDestroyed = (editor) => {           // JS syntax
@@ -169,7 +169,7 @@ editorConfig.onDestroyed = (editor: IDomEditor) => {  // TS syntax
 ## onFocus
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onFocus = (editor: IDomEditor) => {  // TS syntax
 // editorConfig.onFocus = (editor) => {           // JS syntax
@@ -180,7 +180,7 @@ editorConfig.onFocus = (editor: IDomEditor) => {  // TS syntax
 ## onBlur
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onBlur = (editor: IDomEditor) => {  // TS syntax
 // editorConfig.onBlur = (editor) => {           // JS syntax
@@ -193,7 +193,7 @@ editorConfig.onBlur = (editor: IDomEditor) => {  // TS syntax
 You can prevent default paste event, redefine your custom paste logic.
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean => {  // TS syntax
 // editorConfig.customPaste = (editor, event) => {                                    // JS syntax

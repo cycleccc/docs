@@ -7,9 +7,9 @@
 新建一个 `custom-types.d.ts` ，源码如下。注意，保证该文件在 `tsconfig.json` 的 `include` 中。
 
 ```ts
-import { SlateDescendant, SlateElement, SlateText } from '@wangeditor/editor'
+import { SlateDescendant, SlateElement, SlateText } from '@wangeditor-next/editor'
 
-declare module '@wangeditor/editor' {
+declare module '@wangeditor-next/editor' {
     // 扩展 Text
     interface SlateText {
         text: string

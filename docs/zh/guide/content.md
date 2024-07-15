@@ -95,7 +95,7 @@ const editor = createEditor({
 
 ```ts
 // 伪代码
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 let editor: IDomEditor | null = null   // TS 语法
 // let editor = null                   // JS 语法
@@ -109,5 +109,5 @@ ajax(url, res => {
 ```
 
 ::: tip
-其他的内容处理，可参考 [API](./API.html)
+其他的内容处理，可参考 [API](./API.md)
 :::

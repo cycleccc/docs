@@ -3,7 +3,7 @@
 快速了解可查看[视频教程](./video-course.md)。
 
 ```ts{5}
-import { IEditorConfig } from '@wangeditor/editor'
+import { IEditorConfig } from '@wangeditor-next/editor'
 
 const editorConfig: Partial<IEditorConfig> = {   // TS 语法
 // const editorConfig = {                        // JS 语法
@@ -33,7 +33,7 @@ editorConfig.placeholder = '请输入内容...'
 editorConfig.readOnly = true
 ```
 
-只读状态可通过 `editor.enable()` 和 `editor.disable()` 切换，详见 [API](/zh/v5/API.html) 。
+只读状态可通过 `editor.enable()` 和 `editor.disable()` 切换，详见 [API](./API.md) 。
 
 ## autoFocus
 
@@ -62,7 +62,7 @@ editorConfig.scroll = false
 配置编辑器的 maxlength ，参考 [demo](https://www.wangeditor.com/demo/max-length.html)。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.maxLength = 1000
 editorConfig.onMaxLength = function (editor: IDomEditor) {   // TS 语法
@@ -112,7 +112,7 @@ editorConfig.hoverbarKeys = {
 如果 element type 无法满足需求，可通过自定义 `match` 函数匹配元素。
 
 ```ts
-import { SlateNode, IDomEditor } from '@wangeditor/editor'
+import { SlateNode, IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.hoverbarKeys = {
     'text': {
@@ -133,7 +133,7 @@ editorConfig.hoverbarKeys = {
 编辑器创建完毕时的回调函数。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onCreated = (editor: IDomEditor) => {   // TS 语法
 // editorConfig.onCreated = (editor) => {            // JS 语法
@@ -146,7 +146,7 @@ editorConfig.onCreated = (editor: IDomEditor) => {   // TS 语法
 编辑器内容、选区变化时的回调函数。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onChange = (editor: IDomEditor) => {   // TS 语法
 // editorConfig.onChange = (editor) => {            // JS 语法
@@ -157,10 +157,10 @@ editorConfig.onChange = (editor: IDomEditor) => {   // TS 语法
 
 ## onDestroyed
 
-编辑器销毁时的回调函数。调用 `editor.destroy()` 即可销毁编辑器，详见 [API](/zh/v5/API.html) 。
+编辑器销毁时的回调函数。调用 `editor.destroy()` 即可销毁编辑器，详见 [API](./API.md) 。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onDestroyed = (editor: IDomEditor) => {   // TS 语法
 // editorConfig.onDestroyed = (editor) => {            // JS 语法
@@ -173,7 +173,7 @@ editorConfig.onDestroyed = (editor: IDomEditor) => {   // TS 语法
 编辑器 focus 时的回调函数。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onFocus = (editor: IDomEditor) => {    // TS 语法
 // editorConfig.onFocus = (editor) => {             // JS 语法
@@ -186,7 +186,7 @@ editorConfig.onFocus = (editor: IDomEditor) => {    // TS 语法
 编辑器 blur 时的回调函数。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.onBlur = (editor: IDomEditor) => {   // TS 语法
 // editorConfig.onBlur = (editor) => {            // JS 语法
@@ -199,7 +199,7 @@ editorConfig.onBlur = (editor: IDomEditor) => {   // TS 语法
 自定义粘贴。可阻止编辑器的默认粘贴，实现自己的粘贴逻辑。
 
 ```ts
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean => {     // TS 语法
 // editorConfig.customPaste = (editor, event) => {                                       // JS 语法

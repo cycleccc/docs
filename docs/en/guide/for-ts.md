@@ -7,9 +7,9 @@ Create a `custom-types.d.ts` file, ensure it will be included in `tsconfig.json`
 ```ts
 // custom-types.d.ts
 
-import { SlateDescendant, SlateElement, SlateText } from '@wangeditor/editor'
+import { SlateDescendant, SlateElement, SlateText } from '@wangeditor-next/editor'
 
-declare module '@wangeditor/editor' {
+declare module '@wangeditor-next/editor' {
     // Extend Text
     interface SlateText {
         text: string

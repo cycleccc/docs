@@ -197,7 +197,7 @@ editor.insertNode(node)
 Insert many nodes in selection.
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 const node1 = { type: 'paragraph', children: [{ text: 'aaa' }] }
 const node2 = { type: 'paragraph', children: [{ text: 'bbb' }] }
@@ -211,7 +211,7 @@ SlateTransforms.insertNodes(editor, nodeList)
 Remove all nodes in selection.
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 SlateTransforms.removeNodes(editor)
 ```
@@ -221,7 +221,7 @@ SlateTransforms.removeNodes(editor)
 Use `SlateEditor.nodes` to get selected nodes, see `Editor.nodes` API in [Slate.js doc](https://docs.slatejs.org/).
 
 ```ts
-import { SlateEditor, SlateElement, SlateNode } from '@wangeditor/editor'
+import { SlateEditor, SlateElement, SlateNode } from '@wangeditor-next/editor'
 
 const nodeEntries = SlateEditor.nodes(editor, {
     match: (node: SlateNode) => {  // TS syntax
@@ -252,7 +252,7 @@ if (nodeEntries == null) {
 Set node props in selection
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 SlateTransforms.setNodes(editor, {
   // @ts-ignore
@@ -297,7 +297,7 @@ const void = editor.isVoid(node)
 Text's concept, See [Slate.js doc](https://docs.slatejs.org/concepts/02-nodes).
 
 ```ts
-import { SlateText } from '@wangeditor/editor'
+import { SlateText } from '@wangeditor-next/editor'
 
 SlateText.isText(node) // true/false
 ```
@@ -307,7 +307,7 @@ SlateText.isText(node) // true/false
 Element's concept, See [Slate.js doc](https://docs.slatejs.org/concepts/02-nodes).
 
 ```ts
-import { SlateElement } from '@wangeditor/editor'
+import { SlateElement } from '@wangeditor-next/editor'
 
 SlateElement.isElement(node) // true/false
 ```
@@ -332,7 +332,7 @@ editor.removeMark('bold') // cancel bold
 Get selected text marks.
 
 ```ts
-import { SlateEditor } from '@wangeditor/editor'
+import { SlateEditor } from '@wangeditor-next/editor'
 
 SlateEditor.marks(editor) // like { bold: true, color: "#595959" }
 ```
@@ -609,29 +609,29 @@ wangEditor is based on [slate.js](https://docs.slatejs.org/) but React. You may 
 
 See [slate Transforms API](https://docs.slatejs.org/api/transforms) first.
 
-You could get slate `Transforms` object from `@wangeditor/editor`, no need to install `slate`.
+You could get slate `Transforms` object from `@wangeditor-next/editor`, no need to install `slate`.
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 ```
 
 ### Node Editor API
 
 See [slate Node API](https://docs.slatejs.org/api/nodes) first.
 
-You could get slate Node objects from `@wangeditor/editor`, no need to install `slate`.
+You could get slate Node objects from `@wangeditor-next/editor`, no need to install `slate`.
 
 ```ts
-import { SlateEditor, SlateNode, SlateElement, SlateText } from '@wangeditor/editor'
+import { SlateEditor, SlateNode, SlateElement, SlateText } from '@wangeditor-next/editor'
 ```
 
 ### Location API
 
 See [slate Location API](https://docs.slatejs.org/api/locations) first.
 
-You could get slate Location objects from `@wangeditor/editor`, no need to install `slate`.
+You could get slate Location objects from `@wangeditor-next/editor`, no need to install `slate`.
 
 ```ts
-import { SlateLocation, SlatePath, SlatePoint, SlateRange } from '@wangeditor/editor'
+import { SlateLocation, SlatePath, SlatePoint, SlateRange } from '@wangeditor-next/editor'
 ```
 

@@ -1,6 +1,6 @@
 # 用于 Vue React
 
-快速了解可查看[视频教程](/zh/v5/video-course.html)。
+快速了解可查看[视频教程](./video-course.md)。
 
 ## Vue2
 
@@ -12,11 +12,11 @@
 ### 安装
 
 ```sh
-yarn add @wangeditor/editor
-# 或者 npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# 或者 npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-vue
-# 或者 npm install @wangeditor/editor-for-vue --save
+yarn add @wangeditor-next/editor-for-vue
+# 或者 npm install @wangeditor-next/editor-for-vue --save
 ```
 
 ### 使用
@@ -48,7 +48,7 @@ script
 ```html
 <script>
 import Vue from 'vue'
-import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue'
 
 export default Vue.extend({
     components: { Editor, Toolbar },
@@ -89,15 +89,15 @@ export default Vue.extend({
 记得引入 style
 
 ```html
-<style src="@wangeditor/editor/dist/css/style.css"></style>
+<style src="@wangeditor-next/editor/dist/css/style.css"></style>
 ```
 
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](./toolbar-config.md) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](./editor-config.md) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](./menu-config.md) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 【注意】编辑器配置中 `onXxx` 格式的生命周期函数，**必须通过 Vue 事件来传递，不可以放在 `editorConfig` 中**，例如：
 
@@ -152,7 +152,7 @@ methods: {
 
 ### 调用 API
 
-当编辑器渲染完成之后，通过 `this.editor` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
+当编辑器渲染完成之后，通过 `this.editor` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](./API.md) 。
 
 ```xml
 <template>
@@ -189,11 +189,11 @@ methods: {
 ### 安装
 
 ```sh
-yarn add @wangeditor/editor
-# 或者 npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# 或者 npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-vue@next
-# 或者 npm install @wangeditor/editor-for-vue@next --save
+yarn add @wangeditor-next/editor-for-vue@next
+# 或者 npm install @wangeditor-next/editor-for-vue@next --save
 ```
 
 ### 使用
@@ -224,10 +224,10 @@ script
 
 ```html
 <script>
-import '@wangeditor/editor/dist/css/style.css' // 引入 css
+import '@wangeditor-next/editor/dist/css/style.css' // 引入 css
 
 import { onBeforeUnmount, ref, shallowRef, onMounted } from 'vue'
-import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue'
 
 export default {
   components: { Editor, Toolbar },
@@ -280,9 +280,9 @@ export default {
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](./toolbar-config.md) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](./editor-config.md) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](./menu-config.md) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 【注意】编辑器配置中 `onXxx` 格式的生命周期函数，**必须通过 Vue 事件来传递，不可以放在 `editorConfig` 中**，例如：
 
@@ -345,7 +345,7 @@ return {
 
 ### 调用 API
 
-当编辑器渲染完成之后，通过 `editorRef.value` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
+当编辑器渲染完成之后，通过 `editorRef.value` 获取 editor 实例，即可调用它的 API 。参考 [编辑器 API](./API.md) 。
 
 ```xml
 <template>
@@ -384,21 +384,21 @@ return {
 ### 安装
 
 ```sh
-yarn add @wangeditor/editor
-# 或者 npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# 或者 npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-react
-# 或者 npm install @wangeditor/editor-for-react --save
+yarn add @wangeditor-next/editor-for-react
+# 或者 npm install @wangeditor-next/editor-for-react --save
 ```
 
 ### 使用
 
 ```tsx
-import '@wangeditor/editor/dist/css/style.css' // 引入 css
+import '@wangeditor-next/editor/dist/css/style.css' // 引入 css
 
 import React, { useState, useEffect } from 'react'
-import { Editor, Toolbar } from '@wangeditor/editor-for-react'
-import { IDomEditor, IEditorConfig, IToolbarConfig } from '@wangeditor/editor'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-react'
+import { IDomEditor, IEditorConfig, IToolbarConfig } from '@wangeditor-next/editor'
 
 function MyEditor() {
     // editor 实例
@@ -465,13 +465,13 @@ export default MyEditor
 ### 配置
 
 可通过 `toolbarConfig` 和 `editorConfig` 来修改菜单栏和编辑器的配置，详细文档参考
-- [工具栏配置](/zh/v5/toolbar-config.html) - 插入新菜单，屏蔽某个菜单等
-- [编辑器配置](/zh/v5/editor-config.html) - 兼听各个**生命周期**，自定义**粘贴**
-- [菜单配置](/zh/v5/menu-config.html) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
+- [工具栏配置](./toolbar-config.md) - 插入新菜单，屏蔽某个菜单等
+- [编辑器配置](./editor-config.md) - 兼听各个**生命周期**，自定义**粘贴**
+- [菜单配置](./menu-config.md) - 配置颜色、字体、字号、链接校验、**上传图片、视频**等
 
 ### 调用 API
 
-当编辑器渲染完成之后，即可调用它的 API 。参考 [编辑器 API](/zh/v5/API.html) 。
+当编辑器渲染完成之后，即可调用它的 API 。参考 [编辑器 API](./API.md) 。
 
 ```jsx
 function insertText() {

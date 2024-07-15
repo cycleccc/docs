@@ -12,11 +12,11 @@ If you first-time use wangEditor, please see [Get started](./getting-started.md)
 ### Installation
 
 ```sh
-yarn add @wangeditor/editor
-# npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-vue
-# npm install @wangeditor/editor-for-vue --save
+yarn add @wangeditor-next/editor-for-vue
+# npm install @wangeditor-next/editor-for-vue --save
 ```
 
 ### Usage
@@ -48,7 +48,7 @@ Script
 ```html
 <script>
 import Vue from 'vue'
-import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue'
 
 export default Vue.extend({
     components: { Editor, Toolbar },
@@ -89,7 +89,7 @@ export default Vue.extend({
 Import style
 
 ```html
-<style src="@wangeditor/editor/dist/css/style.css"></style>
+<style src="@wangeditor-next/editor/dist/css/style.css"></style>
 ```
 
 ### Config
@@ -152,7 +152,7 @@ methods: {
 
 ### API
 
-You can use `this.editor` to get the `editor` instance after it's rendered, and trigger it's [APIs]((./API.md)).
+You can use `this.editor` to get the `editor` instance after it's rendered, and trigger it's [APIs](./API.md).
 
 ```xml
 <template>
@@ -188,14 +188,14 @@ methods: {
 
 ### Installation
 
-Install `@wangeditor/editor` and `@wangeditor/editor-for-vue@next`, see [Installation](./installation.md).
+Install `@wangeditor-next/editor` and `@wangeditor-next/editor-for-vue@next`, see [Installation](./installation.md).
 
 ```sh
-yarn add @wangeditor/editor
-# npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-vue@next
-# npm install @wangeditor/editor-for-vue@next --save
+yarn add @wangeditor-next/editor-for-vue@next
+# npm install @wangeditor-next/editor-for-vue@next --save
 ```
 
 ### Usage
@@ -226,10 +226,10 @@ Script
 
 ```html
 <script>
-import '@wangeditor/editor/dist/css/style.css' // import css
+import '@wangeditor-next/editor/dist/css/style.css' // import css
 
 import { onBeforeUnmount, ref, shallowRef, onMounted } from 'vue'
-import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue'
 
 export default {
   components: { Editor, Toolbar },
@@ -347,7 +347,7 @@ return {
 
 ### API
 
-You can use `editorRef.value` to get the `editor` instance after it's rendered, and trigger it's [APIs]((./API.md)).
+You can use `editorRef.value` to get the `editor` instance after it's rendered, and trigger it's [APIs](./API.md).
 
 ```xml
 <template>
@@ -386,21 +386,21 @@ return {
 ### Installation
 
 ```sh
-yarn add @wangeditor/editor
-# npm install @wangeditor/editor --save
+yarn add @wangeditor-next/editor
+# npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor/editor-for-react
-# npm install @wangeditor/editor-for-react --save
+yarn add @wangeditor-next/editor-for-react
+# npm install @wangeditor-next/editor-for-react --save
 ```
 
 ### Usage
 
 ```tsx
-import '@wangeditor/editor/dist/css/style.css' // import css
+import '@wangeditor-next/editor/dist/css/style.css' // import css
 
 import React, { useState, useEffect } from 'react'
-import { Editor, Toolbar } from '@wangeditor/editor-for-react'
-import { IDomEditor, IEditorConfig, IToolbarConfig } from '@wangeditor/editor'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-react'
+import { IDomEditor, IEditorConfig, IToolbarConfig } from '@wangeditor-next/editor'
 
 function MyEditor() {
     // editor instance
@@ -471,7 +471,7 @@ You can extend toolbar and editor config in `toolbarConfig` and `editorConfig` (
 
 ### API
 
-You can get the `editor` state value, and trigger it's [APIs]((./API.md)).
+You can get the `editor` state value, and trigger it's [APIs](./API.md).
 
 ```jsx
 function insertText() {

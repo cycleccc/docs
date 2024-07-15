@@ -3,7 +3,7 @@
 If you first-time use wangEditor, please see [Get Started](./getting-started.md) it to learn basic usage.
 
 ```ts{5}
-import { IToolbarConfig } from '@wangeditor/editor'
+import { IToolbarConfig } from '@wangeditor-next/editor'
 
 const toolbarConfig: Partial<IToolbarConfig> = {   // TS syntax
 // const toolbarConfig = {                         // JS syntax
@@ -19,7 +19,7 @@ Use `toolbar.getConfig()` to checkout default toolbar config.<br>
 If you use Vue or React, you can get `toolbar` instance by these codes.
 
 ```ts
-import { DomEditor } from '@wangeditor/editor'
+import { DomEditor } from '@wangeditor-next/editor'
 const toolbar = DomEditor.getToolbar(editor)
 ```
 

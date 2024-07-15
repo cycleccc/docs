@@ -1,6 +1,6 @@
 # 快速开始
 
-快速了解可查看[视频教程](/zh/v5/video-course.html)。用于 Vue React 参考[这里](./for-frame.md)。
+快速了解可查看[视频教程](./video-course.md)。用于 Vue React 参考[这里](./for-frame.md)。
 
 ## 创建空白编辑器
 
@@ -11,7 +11,7 @@
 可自定义编辑器、工具栏的尺寸、边框、`z-index` 等样式。
 
 ```html
-<link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+<link href="https://unpkg.com/@wangeditor-next/editor@latest/dist/css/style.css" rel="stylesheet">
 <style>
   #editor—wrapper {
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@
 ### 引入 JS 创建编辑器
 
 ```html
-<script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+<script src="https://unpkg.com/@wangeditor-next/editor@latest/dist/index.js"></script>
 <script>
 const { createEditor, createToolbar } = window.wangEditor
 

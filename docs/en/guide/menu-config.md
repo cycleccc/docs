@@ -17,7 +17,7 @@ editor.getMenuConfig('uploadImage') // `uploadImage` is a menu key
 ### Change the Menu Config
 
 ```ts
-import { IEditorConfig } from '@wangeditor/editor'
+import { IEditorConfig } from '@wangeditor-next/editor'
 
 // add a MENU_CONF prop
 const editorConfig: Partial<IEditorConfig> = {  // TS syntax
@@ -188,7 +188,7 @@ If you use Typescript, you need define image element type.
 ```ts
 // create a `.d.ts` file
 
-import { SlateElement } from '@wangeditor/editor'
+import { SlateElement } from '@wangeditor-next/editor'
 
 type ImageElement = SlateElement & {
     src: string
@@ -466,7 +466,7 @@ If you use Typescript, you need to define video element type first.
 ```ts
 // create a `.d.ts` file
 
-import { SlateElement } from '@wangeditor/editor'
+import { SlateElement } from '@wangeditor-next/editor'
 
 type VideoElement = SlateElement & {
     src: string
@@ -543,7 +543,7 @@ If uploaded successfully, the server must return data like this format:
     }
 }
 
-// @wangeditor/editor >= 5.1.8 support video poster
+// @wangeditor-next/editor >= 5.1.8 support video poster
 ```
 
 If uploaded failed, the server must return data like this format:

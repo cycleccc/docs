@@ -12,7 +12,7 @@ editor.getConfig()
 
 ### getMenuConfig
 
-获取单个 menu 的配置。menu 配置相关的可参考[这里](/zh/v5/menu-config.html)。
+获取单个 menu 的配置。menu 配置相关的可参考[这里](./menu-config.md)。
 
 ```ts
 editor.getMenuConfig(menuKey)
@@ -28,7 +28,7 @@ editor.getAllMenuKeys()
 
 ### alert
 
-编辑器 alert ，可通过 [customAlert](/zh/v5/editor-config.html#customalert) 配置。
+编辑器 alert ，可通过 [customAlert](./editor-config.md#customalert) 配置。
 
 ```ts
 editor.alert('错误信息', 'error')
@@ -198,7 +198,7 @@ editor.redo()
 
 ## 节点操作
 
-使用节点操作 API 前，请查看 [节点数据结构](/zh/v5/node-define.html) 。
+使用节点操作 API 前，请查看 [节点数据结构](./node-define.md) 。
 
 ### insertNode
 
@@ -214,7 +214,7 @@ editor.insertNode(node)
 在选区插入多个节点
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 const node1 = { type: 'paragraph', children: [{ text: 'aaa' }] }
 const node2 = { type: 'paragraph', children: [{ text: 'bbb' }] }
@@ -228,7 +228,7 @@ SlateTransforms.insertNodes(editor, nodeList)
 删除选区所在的节点
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 SlateTransforms.removeNodes(editor)
 ```
@@ -238,7 +238,7 @@ SlateTransforms.removeNodes(editor)
 可使用 `SlateEditor.nodes` 获取选中的节点。详情可参考 [Slate.js](https://docs.slatejs.org/) 中的 `Editor.nodes` API 。
 
 ```ts
-import { SlateEditor, SlateElement, SlateNode } from '@wangeditor/editor'
+import { SlateEditor, SlateElement, SlateNode } from '@wangeditor-next/editor'
 
 const nodeEntries = SlateEditor.nodes(editor, {
     match: (node: SlateNode) => {  // TS syntax
@@ -269,7 +269,7 @@ if (nodeEntries == null) {
 设置选中节点的属性
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 
 SlateTransforms.setNodes(editor, {
   // @ts-ignore
@@ -322,7 +322,7 @@ void node 即没有子元素的节点（它本身就可以看作是一个特殊�
 判断一个节点是否是 text
 
 ```ts
-import { SlateText } from '@wangeditor/editor'
+import { SlateText } from '@wangeditor-next/editor'
 
 SlateText.isText(node) // true/false
 ```
@@ -332,7 +332,7 @@ SlateText.isText(node) // true/false
 判断一个节点是否是 elem
 
 ```ts
-import { SlateElement } from '@wangeditor/editor'
+import { SlateElement } from '@wangeditor-next/editor'
 
 SlateElement.isElement(node) // true/false
 ```
@@ -359,7 +359,7 @@ editor.removeMark('bold') // 取消加粗
 获取选中文字的标记（文本样式）
 
 ```ts
-import { SlateEditor } from '@wangeditor/editor'
+import { SlateEditor } from '@wangeditor-next/editor'
 
 SlateEditor.marks(editor) // 例如 { bold: true, color: "#595959" }
 ```
@@ -455,7 +455,7 @@ editor.fullScreen()
 ```
 
 :::tip
-全屏功能，有 html 结构的要求，请参考[这里](/zh/v5/getting-started.html#全屏)
+全屏功能，有 html 结构的要求，请参考[这里](./getting-started.md#全屏)
 :::
 
 ### unFullScreen
@@ -673,7 +673,7 @@ editor.on('modalOrPanelHide', () => { console.log('modalOrPanelHide') })
 使用如下方式即可得到 slate Transforms 对象，不用再单独安装 slate 。
 
 ```ts
-import { SlateTransforms } from '@wangeditor/editor'
+import { SlateTransforms } from '@wangeditor-next/editor'
 ```
 
 ### Node Editor API
@@ -683,7 +683,7 @@ import { SlateTransforms } from '@wangeditor/editor'
 使用如下方式即可得到 slate Node 相关对象，不用再单独安装 slate 。
 
 ```ts
-import { SlateEditor, SlateNode, SlateElement, SlateText } from '@wangeditor/editor'
+import { SlateEditor, SlateNode, SlateElement, SlateText } from '@wangeditor-next/editor'
 ```
 
 ### Location API
@@ -693,5 +693,5 @@ import { SlateEditor, SlateNode, SlateElement, SlateText } from '@wangeditor/edi
 使用如下方式即可得到 slate Location 相关对象，不用再单独安装 slate 。
 
 ```ts
-import { SlateLocation, SlatePath, SlatePoint, SlateRange } from '@wangeditor/editor'
+import { SlateLocation, SlatePath, SlatePoint, SlateRange } from '@wangeditor-next/editor'
 ```

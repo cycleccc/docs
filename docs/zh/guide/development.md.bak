@@ -21,7 +21,7 @@ wangEditor 扩展性包括以下部分，你可以来扩展大部分常用的功
 如果你需要扩展新元素，则需要先定义数据结构。<br>
 如果不需要，则忽略该步骤。
 
-具体可参考 [节点数据结构](/zh/v5/node-define.html) ，定义自己的节点数据结构。<br>
+具体可参考 [节点数据结构](./node-define.md) ，定义自己的节点数据结构。<br>
 注意要符合 [slate.js](https://docs.slatejs.org/) 的数据规范。
 
 ## Render
@@ -50,7 +50,7 @@ yarn add snabbdom --peer
 
 ```tsx
 import { h, VNode } from 'snabbdom'
-import { Boot, IDomEditor, SlateElement } from '@wangeditor/editor'
+import { Boot, IDomEditor, SlateElement } from '@wangeditor-next/editor'
 
 // 渲染函数
 function renderParagraph(elem: SlateElement, children: VNode[] | null, editor: IDomEditor): VNode {
@@ -85,7 +85,7 @@ PS：`h` 函数的使用，请参考 [snabbdom](https://github.com/snabbdom/snab
 
 ```ts
 import { h, VNode, VNodeStyle } from 'snabbdom'
-import { Boot, SlateElement, SlateText, SlateDescendant } from '@wangeditor/editor'
+import { Boot, SlateElement, SlateText, SlateDescendant } from '@wangeditor-next/editor'
 
 /**
  * 给 vnode 添加样式
@@ -145,7 +145,7 @@ PS：`h` 函数的使用，请参考 [snabbdom](https://github.com/snabbdom/snab
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, SlateElement } from '@wangeditor/editor'
+import { Boot, SlateElement } from '@wangeditor-next/editor'
 
 // 生成 html 的函数
 function paragraphToHtml(elem: SlateElement, childrenHtml: string): string {
@@ -176,7 +176,7 @@ Boot.registerElemToHtml(elemToHtmlConf)
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, SlateText, SlateElement, SlateDescendant } from '@wangeditor/editor'
+import { Boot, SlateText, SlateElement, SlateDescendant } from '@wangeditor-next/editor'
 import $ from 'dom7' // jquery 也可以
 
 /**
@@ -216,7 +216,7 @@ Boot.registerStyleToHtml(styleToHtml)
 
 ```ts
 import { Dom7Array } from 'dom7'
-import { Boot, IDomEditor, SlateDescendant, SlateText, SlateElement } from '@wangeditor/editor'
+import { Boot, IDomEditor, SlateDescendant, SlateText, SlateElement } from '@wangeditor-next/editor'
 
 /**
  * 将 html 转换为 slate elem
@@ -263,7 +263,7 @@ Boot.registerParseElemHtml(parseHtmlConf)
 
 ```ts
 import { Dom7Array, SlateText } from 'dom7'
-import { Boot, SlateDescendant, SlateText, IDomEditor } from '@wangeditor/editor'
+import { Boot, SlateDescendant, SlateText, IDomEditor } from '@wangeditor-next/editor'
 
 /**
  * 识别 html 中的颜色，并添加到 text node
@@ -303,7 +303,7 @@ wangEditor 是基于 [slate.js](https://docs.slatejs.org/) 内核的，所以可
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, IDomEditor } from '@wangeditor/editor'
+import { Boot, IDomEditor } from '@wangeditor-next/editor'
 
 // 定义 slate 插件
 function withBreak<T extends IDomEditor>(editor: T): T {
@@ -340,7 +340,7 @@ Boot.registerPlugin(withBreak)
 - ModalMenu 弹出框菜单，如插入链接、插入网络图片
 
 注意，下面代码中的 `key` 即菜单 key ，要唯一不重复。<br>
-注册完菜单之后，即可把这个 `key` 配置到[工具栏](/zh/v5/toolbar-config.html)中。
+注册完菜单之后，即可把这个 `key` 配置到[工具栏](./toolbar-config.md)中。
 
 ### ButtonMenu
 
@@ -351,7 +351,7 @@ Boot.registerPlugin(withBreak)
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, IButtonMenu } from '@wangeditor/editor'
+import { Boot, IButtonMenu } from '@wangeditor-next/editor'
 
 // 定义菜单 class
 class MyButtonMenu implements IButtonMenu {
@@ -379,7 +379,7 @@ Boot.registerMenu(menu1Conf)
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, ISelectMenu } from '@wangeditor/editor'
+import { Boot, ISelectMenu } from '@wangeditor-next/editor'
 
 // 定义菜单 class
 class MySelectMenu implements ISelectMenu {
@@ -407,7 +407,7 @@ Boot.registerMenu(menu2Conf)
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, IDropPanelMenu } from '@wangeditor/editor'
+import { Boot, IDropPanelMenu } from '@wangeditor-next/editor'
 
 // 定义菜单 class
 class MyDropPanelMenu implements IDropPanelMenu {
@@ -435,7 +435,7 @@ Boot.registerMenu(menu3Conf)
 - 全局只能注册一次，不要重复注册
 
 ```ts
-import { Boot, IModalMenu } from '@wangeditor/editor'
+import { Boot, IModalMenu } from '@wangeditor-next/editor'
 
 // 定义菜单 class
 class MyModalMenu implements IModalMenu {
@@ -459,7 +459,7 @@ Boot.registerMenu(menu4Conf)
 可以把上述的 renderElem toHtml parseHtml 插件 菜单等，封装为一个 module ，然后一次性注册。
 
 ```ts
-import { Boot, IModuleConf } from '@wangeditor/editor'
+import { Boot, IModuleConf } from '@wangeditor-next/editor'
 
 const module: Partial<IModuleConf> = {
   editorPlugin: withBreak,

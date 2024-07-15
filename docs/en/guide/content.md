@@ -93,7 +93,7 @@ You can create editor after ajax success callback.
 
 ```js
 // pseudo code
-import { IDomEditor } from '@wangeditor/editor'
+import { IDomEditor } from '@wangeditor-next/editor'
 
 let editor: IDomEditor | null = null  // TS syntax
 // let editor = null                  // JS syntax
@@ -107,5 +107,5 @@ ajax(url, res => {
 ```
 
 ::: tip
-Goto [API](./API.html) to checkout more content APIs.
+Goto [API](./API.md) to checkout more content APIs.
 :::

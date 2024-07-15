@@ -3,11 +3,11 @@
 快速了解可查看[视频教程](./video-course.md)。
 
 :::tip
-wangEditor 从 V5 版本开始，工具栏配置和[菜单配置](/zh/v5/menu-config.html)（如配置颜色、字体、链接校验、上传图片等）分离了。本文只讲工具栏配置。
+wangEditor 从 V5 版本开始，工具栏配置和[菜单配置](./menu-config.md)（如配置颜色、字体、链接校验、上传图片等）分离了。本文只讲工具栏配置。
 :::
 
 ```ts{5}
-import { IToolbarConfig } from '@wangeditor/editor'
+import { IToolbarConfig } from '@wangeditor-next/editor'
 
 const toolbarConfig: Partial<IToolbarConfig> = {  // TS 语法
 // const toolbarConfig = {                        // JS 语法
@@ -23,7 +23,7 @@ const toolbarConfig: Partial<IToolbarConfig> = {  // TS 语法
 如果你使用 Vue React ，可以通过如下代码获取 `toolbar` 实例
 
 ```ts
-import { DomEditor } from '@wangeditor/editor'
+import { DomEditor } from '@wangeditor-next/editor'
 const toolbar = DomEditor.getToolbar(editor)
 
 const curToolbarConfig = toolbar.getConfig()
