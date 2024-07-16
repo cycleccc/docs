@@ -1,6 +1,6 @@
 # wangEditor v5 doc
 
-线上地址：https://www.wangeditor.com/
+线上地址：https://cycleccc.github.io/docs/
 
 ## 本地开发
 
@@ -11,10 +11,10 @@
 下载当前代码，然后启动
 
 ```shell
-yarn     # 安装依赖
-yarn dev # 启动，浏览器访问 http://localhost:8080/
+pnpm install     # 安装依赖
+pnpm docs:dev # 启动，浏览器访问 http://localhost:8080/
 ```
 
 ## 发布上线
 
-提交 main 分支代码，即可触发 [github actions](https://github.com/wangeditor-team/wangEditor-v5-doc/actions) 并发布上线。
+提交 main 分支代码，即可触发 [github actions](https://github.com/cycleccc/wangEditor-v6-doc/actions) 并发布上线。

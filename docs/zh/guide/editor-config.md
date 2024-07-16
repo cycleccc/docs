@@ -54,12 +54,12 @@ editorConfig.scroll = false
 :::tip
 可将 scroll 设置为 `false` 的情况：
 - 编辑器高度自增
-- 在线文档，如腾讯文档、语雀那样的，参考 [demo](https://www.wangeditor.com/demo/zh-CN/like-qq-doc.html) 中的“仿腾讯文档”
+- 在线文档，如腾讯文档、语雀那样的，参考 [demo](https://cycleccc.github.io/docs/demo/zh-CN/like-qq-doc.html) 中的“仿腾讯文档”
 :::
 
 ## maxLength onMaxLength
 
-配置编辑器的 maxlength ，参考 [demo](https://www.wangeditor.com/demo/max-length.html)。
+配置编辑器的 maxlength ，参考 [demo](https://cycleccc.github.io/docs/demo/max-length.html)。
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'
@@ -126,7 +126,7 @@ editorConfig.hoverbarKeys = {
 }
 ```
 
-可参考 hoverbar 配置的[源码](https://github.com/wangeditor-team/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts)。
+可参考 hoverbar 配置的[源码](https://github.com/cycleccc/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts)。
 
 ## onCreated
 
@@ -259,4 +259,4 @@ editorConfig.customAlert = (s: string, t: string) => {    // TS 语法
 
 ## EXTEND_CONF
 
-用于第三方插件做扩展配置，如 [mention 插件](https://github.com/wangeditor-team/wangEditor-plugin-mention)。
+用于第三方插件做扩展配置，如 [mention 插件](https://github.com/cycleccc/wangEditor-plugin-mention)。

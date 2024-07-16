@@ -43,7 +43,7 @@
 
 ## VIP 功能 2 - 在线技术支持
 
-待定中... 如有好的建议，欢迎[提交给我们](https://github.com/wangeditor-team/wangEditor/issues)。
+待定中... 如有好的建议，欢迎[提交给我们](https://github.com/cycleccc/wangEditor/issues)。
 
 （其他 VIP 功能待定中）
 

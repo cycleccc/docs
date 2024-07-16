@@ -4,7 +4,7 @@
 
 ### Get HTML and Text
 
-Use `editor.getHtml()` to get HTML content, see [demo](https://www.wangeditor.com/demo/get-html.html?lang=en). Use `editor.getText()` to get text content.
+Use `editor.getHtml()` to get HTML content, see [demo](https://cycleccc.github.io/docs/demo/get-html.html?lang=en). Use `editor.getText()` to get text content.
 
 PS: HTML format is recommended.
 
@@ -24,10 +24,10 @@ const text = editor.getText()
 ### Custom Style
 
 `editor.getHtml()` can only get pure HTML, there is no inline styles. You need to define your custom style. See some demos:
-- [Get and render HTML](https://www.wangeditor.com/demo/get-html.html?lang=en)
-- [Custom CSS style](https://www.wangeditor.com/demo/css/view.css)
+- [Get and render HTML](https://cycleccc.github.io/docs/demo/get-html.html?lang=en)
+- [Custom CSS style](https://cycleccc.github.io/docs/demo/css/view.css)
 
-You should use [Prism.js](https://prismjs.com/) to highlight code block by yourself. See [demo](https://www.wangeditor.com/demo/code-highlight.html?lang=en).
+You should use [Prism.js](https://prismjs.com/) to highlight code block by yourself. See [demo](https://cycleccc.github.io/docs/demo/code-highlight.html?lang=en).
 
 ## Set Content
 
@@ -50,7 +50,7 @@ const editor = createEditor({
 
 ### Set HTML after create editor
 
-See [demo](https://www.wangeditor.com/demo/set-html.html?lang=en)
+See [demo](https://cycleccc.github.io/docs/demo/set-html.html?lang=en)
 
 ```js
 editor.setHtml('<p>hello <strong>world</strong></p>')

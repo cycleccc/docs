@@ -390,7 +390,7 @@ editor.updateView()
 Scroll to designated DOM element, like html anchor.<br>
 You can use `toDOMNode` to get DOM element and it's id.
 
-See [catalog demo](https://www.wangeditor.com/demo/catalog.html?lang=en).
+See [catalog demo](https://cycleccc.github.io/docs/demo/catalog.html?lang=en).
 
 ```ts
 editor.scrollToElem(elemId)
