@@ -69,7 +69,7 @@ The Vue Editor component can use the v-model attribute to pass in HTML content, 
 
 - [Vue changes the default font size and line height](https://codesandbox.io/p/sandbox/vue2-wangeditor-demo-forked-67fh5s)
 - [React changes the default font size and line height](https://codesandbox.io/p/sandbox/react-wangeditor-defaultfont-59c48n)
-- [Related issues](https://github.com/wangeditor-team/wangEditor/issues/4042)
+- [Related issues](https://github.com/cycleccc/wangEditor/issues/4042)
 
 ## Color
 
@@ -253,7 +253,7 @@ editorConfig.MENU_CONF['editImage'] = {
 
 ## Upload Image
 
-See [demo](https://github.com/wangeditor-team/server).
+See [demo](https://github.com/cycleccc/server).
 
 ```ts{2}
 editorConfig.MENU_CONF['uploadImage'] = {
@@ -514,7 +514,7 @@ editorConfig.MENU_CONF['insertVideo'] = {
 
 ## Upload Video
 
-See [demo](https://github.com/wangeditor-team/server).
+See [demo](https://github.com/cycleccc/server).
 
 ```ts{2}
 editorConfig.MENU_CONF['uploadVideo'] = {

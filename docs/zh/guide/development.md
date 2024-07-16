@@ -20,7 +20,7 @@ core 是核心 API ，editor 负责汇总集成。所有的具体功能，都分
 
 ### ButtonMenu
 
-可参考这个 [demo](https://www.wangeditor.com/demo/extend-menu.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -68,11 +68,11 @@ class MyButtonMenu implements IButtonMenu {   // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://www.wangeditor.com/demo/extend-menu.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu.html)
 
 ### SelectMenu
 
-可参考这个 [demo](https://www.wangeditor.com/demo/extend-menu-select.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-select.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -129,11 +129,11 @@ class MySelectMenu implements ISelectMenu {   // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://www.wangeditor.com/demo/extend-menu-select.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-select.html)
 
 ### DropPanelMenu
 
-可参考这个 [demo](https://www.wangeditor.com/demo/extend-menu-drop-panel.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-drop-panel.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -197,11 +197,11 @@ class MyDropPanelMenu implements IDropPanelMenu {    // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](htthttps://www.wangeditor.com/demo/extend-menu-drop-panel.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](htthttps://cycleccc.github.io/docs/demo/extend-menu-drop-panel.html)
 
 ### ModalMenu
 
-可参考这个 [demo](https://www.wangeditor.com/demo/extend-menu-modal.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-modal.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -272,7 +272,7 @@ class MyModalMenu implements IModalMenu {    // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://www.wangeditor.com/demo/extend-menu-modal.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-modal.html)
 
 #### 用 Vue React 组件实现 modal
 
@@ -281,7 +281,7 @@ class MyModalMenu implements IModalMenu {    // TS 语法
 - 不用 ModalMenu ，改用最简单的 ButtonMenu
 - 在 `exec` 函数中通过自定义事件（或其他方式）来控制 modal 组件的显示和隐藏
 
-可再参考这个分享：[在 React 中更方便的扩展 Menu ，替代原有的 ModalMenu 方案](https://github.com/wangeditor-team/wangEditor/issues/4598)
+可再参考这个分享：[在 React 中更方便的扩展 Menu ，替代原有的 ModalMenu 方案](https://github.com/cycleccc/wangEditor/issues/4598)
 
 ### 注册菜单到 wangEditor
 
@@ -337,7 +337,7 @@ Boot.registerModule(module)
 
 ## 劫持编辑器事件和操作（插件）
 
-如[支持 markdown 语法](https://github.com/wangeditor-team/wangEditor-plugin-md)，以及 [ctrl + enter 回车](https://github.com/wangeditor-team/wangEditor-plugin-ctrl-enter)等。可参考它们的源码。
+如[支持 markdown 语法](https://github.com/cycleccc/wangEditor-plugin-md)，以及 [ctrl + enter 回车](https://github.com/cycleccc/wangEditor-plugin-ctrl-enter)等。可参考它们的源码。
 
 ### 定义插件
 
@@ -414,7 +414,7 @@ Boot.registerModule(module)
 
 ## 定义新元素
 
-编辑器默认只有基本的标题、列表、文字、图片、表格等元素，如果你想让编辑器渲染一个新元素，如 [附件](https://github.com/wangeditor-team/wangEditor-plugin-upload-attachment) [数学公式](https://github.com/wangeditor-team/wangEditor-plugin-formula) [链接卡片](https://github.com/wangeditor-team/wangEditor-plugin-link-card) 等，你就需要根据本节内容来定义。
+编辑器默认只有基本的标题、列表、文字、图片、表格等元素，如果你想让编辑器渲染一个新元素，如 [附件](https://github.com/cycleccc/wangEditor-plugin-upload-attachment) [数学公式](https://github.com/cycleccc/wangEditor-plugin-formula) [链接卡片](https://github.com/cycleccc/wangEditor-plugin-link-card) 等，你就需要根据本节内容来定义。
 
 编辑器的输入和输出通常都是 HTML ，但其内部却有复杂的渲染机制，主要过程是：**model -> 生成 vdom -> 渲染 DOM**，如下图。
 
@@ -445,7 +445,7 @@ const myResume: AttachmentElement = {  // TS 语法
 }
 ```
 
-如果你使用 TS ， `AttachmentElement` 的定义在[这里](https://github.com/wangeditor-team/wangEditor-plugin-upload-attachment/blob/main/src/module/custom-types.ts)。
+如果你使用 TS ， `AttachmentElement` 的定义在[这里](https://github.com/cycleccc/wangEditor-plugin-upload-attachment/blob/main/src/module/custom-types.ts)。
 
 ### 定义 inline 和 void
 
@@ -496,7 +496,7 @@ yarn add snabbdom --peer
 
 #### 定义 renderElem 函数
 
-以下是“附件”元素 renderElem 的代码示例，完整代码请参考它的[源码](https://github.com/wangeditor-team/wangEditor-plugin-upload-attachment/blob/main/src/module/render-elem.ts)
+以下是“附件”元素 renderElem 的代码示例，完整代码请参考它的[源码](https://github.com/cycleccc/wangEditor-plugin-upload-attachment/blob/main/src/module/render-elem.ts)
 
 ```ts
 import { h, VNode } from 'snabbdom'
@@ -596,7 +596,7 @@ Boot.registerModule(module)
 
 #### 定义 elemToHtml 函数
 
-以下是代码示例，完整源码可参考[这里](https://github.com/wangeditor-team/wangEditor-plugin-upload-attachment/blob/main/src/module/elem-to-html.ts)
+以下是代码示例，完整源码可参考[这里](https://github.com/cycleccc/wangEditor-plugin-upload-attachment/blob/main/src/module/elem-to-html.ts)
 
 ```ts
 import { SlateElement } from '@wangeditor-next/editor'

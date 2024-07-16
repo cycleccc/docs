@@ -4,7 +4,7 @@
 
 ## 创建空白编辑器
 
-可直接参考 [demo 示例](https://www.wangeditor.com/demo/)的网页源码。
+可直接参考 [demo 示例](https://cycleccc.github.io/docs/demo/)的网页源码。
 
 ### 引入 CSS 定义样式
 
@@ -33,7 +33,7 @@
 
 ::: tip
 - 如果想要“全屏”功能，则要求工具栏、编辑器 DOM 节点必须是同一层级
-- 当然，工具栏、编辑器 DOM 节点也可自由组合，例如 [仿腾讯文档 demo](https://www.wangeditor.com/demo/like-qq-doc.html)
+- 当然，工具栏、编辑器 DOM 节点也可自由组合，例如 [仿腾讯文档 demo](https://cycleccc.github.io/docs/demo/like-qq-doc.html)
 :::
 
 ### 引入 JS 创建编辑器
@@ -72,8 +72,8 @@ const toolbar = createToolbar({
 
 ::: tip
 不同 `mode` 可参考 demo
-- [mode: 'default'](https://www.wangeditor.com/demo/index.html) 默认模式 - 集成了 wangEditor 所有功能
-- [mode: 'simple'](https://www.wangeditor.com/demo/simple-mode.html) 简洁模式 - 仅有部分常见功能，但更加简洁易用
+- [mode: 'default'](https://cycleccc.github.io/docs/demo/index.html) 默认模式 - 集成了 wangEditor 所有功能
+- [mode: 'simple'](https://cycleccc.github.io/docs/demo/simple-mode.html) 简洁模式 - 仅有部分常见功能，但更加简洁易用
 :::
 
 这样就创建出了一个最基本的编辑器。

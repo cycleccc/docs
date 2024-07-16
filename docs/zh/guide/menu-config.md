@@ -75,7 +75,7 @@ Vue Editor件可以使用 v-model 属性传入 HTML 内容，React Editor组件�
 
 - [Vue修改默认字体字号行高](https://codesandbox.io/p/sandbox/vue2-wangeditor-demo-forked-67fh5s)
 - [React修改默认字体字号行高](https://codesandbox.io/p/sandbox/react-wangeditor-defaultfont-59c48n)
-- [相关 issues](https://github.com/wangeditor-team/wangEditor/issues/4042)
+- [相关 issues](https://github.com/cycleccc/wangEditor/issues/4042)
 
 ## 颜色
 
@@ -270,7 +270,7 @@ editorConfig.MENU_CONF['editImage'] = {
 
 ## 上传图片
 
-上传图片的配置比较复杂，拆分为几个部分来讲解。可参考这个 [demo](https://github.com/wangeditor-team/server)。
+上传图片的配置比较复杂，拆分为几个部分来讲解。可参考这个 [demo](https://github.com/cycleccc/server)。
 
 ```ts{2}
 editorConfig.MENU_CONF['uploadImage'] = {
@@ -545,7 +545,7 @@ editorConfig.MENU_CONF['insertVideo'] = {
 
 ## 上传视频
 
-上传视频的配置比较复杂，拆分为几个部分来讲解。可参考这个 [demo](https://github.com/wangeditor-team/server)。
+上传视频的配置比较复杂，拆分为几个部分来讲解。可参考这个 [demo](https://github.com/cycleccc/server)。
 
 ```ts{2}
 editorConfig.MENU_CONF['uploadVideo'] = {

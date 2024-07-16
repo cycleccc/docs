@@ -1,6 +1,7 @@
 # wangEditor v5 doc
 
 线上地址：https://cycleccc.github.io/docs/
+线上地址：https://cycleccc.github.io/docs/
 
 ## 本地开发
 
@@ -12,7 +13,7 @@
 
 ```shell
 pnpm install     # 安装依赖
-yarn docs:dev # 启动，浏览器访问
+pnpm docs:dev # 启动，浏览器访问 http://localhost:8080/
 ```
 
 ## 发布上线

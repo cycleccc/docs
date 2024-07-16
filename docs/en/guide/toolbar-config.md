@@ -92,4 +92,4 @@ editor.on('modalOrPanelHide', () => {
 })
 ```
 
-You could checkout [example source code](https://github.com/wangeditor-team/wangEditor/blob/master/packages/editor/examples/modal-appendTo-body.html).
+You could checkout [example source code](https://github.com/cycleccc/wangEditor/blob/master/packages/editor/examples/modal-appendTo-body.html).
