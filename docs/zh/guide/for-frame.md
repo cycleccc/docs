@@ -15,8 +15,8 @@
 yarn add @wangeditor-next/editor
 # 或者 npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor-next/editor-for-vue
-# 或者 npm install @wangeditor-next/editor-for-vue --save
+yarn add @wangeditor-next/editor-for-vue2
+# 或者 npm install @wangeditor-next/editor-for-vue2 --save
 ```
 
 ### 使用
@@ -48,7 +48,7 @@ script
 ```html
 <script>
 import Vue from 'vue'
-import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue'
+import { Editor, Toolbar } from '@wangeditor-next/editor-for-vue2'
 
 export default Vue.extend({
     components: { Editor, Toolbar },

@@ -21,8 +21,8 @@ yarn add @wangeditor-next/editor-for-react
 安装 Vue2 组件(可选)
 
 ```shell
-yarn add @wangeditor-next/editor-for-vue
-# 或者 npm install @wangeditor-next/editor-for-vue --save
+yarn add @wangeditor-next/editor-for-vue2
+# 或者 npm install @wangeditor-next/editor-for-vue2 --save
 ```
 
 安装 Vue3 组件(可选)
