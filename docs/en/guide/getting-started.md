@@ -4,7 +4,7 @@ If you wanna to use wangEditor in Vue or React, please read this article first, 
 
 ## Create Empty Editor
 
-You can see [demo](https://cycleccc.github.io/docs/demo/index.html?lang=en) page source code.
+You can see [demo](https://cycleccc.github.io/demo/index.html?lang=en) page source code.
 
 ### Import CSS and define style
 
@@ -31,7 +31,7 @@ You can see [demo](https://cycleccc.github.io/docs/demo/index.html?lang=en) page
 
 :::tip
 - If you need **full-screen** function, `toolbar-container` and `editor-container` must have a same parent node.
-- You can separate `toolbar-container` and `editor-container`, e.g. [simulate Google doc editor](https://cycleccc.github.io/docs/demo/like-qq-doc.html?lang=en).
+- You can separate `toolbar-container` and `editor-container`, e.g. [simulate Google doc editor](https://cycleccc.github.io/demo/like-qq-doc.html?lang=en).
 :::
 
 ### Import JS and create editor
@@ -70,8 +70,8 @@ const toolbar = createToolbar({
 ```
 
 :::tip
-- `mode: 'default'` Integrate all wangEditor functions, see [demo](https://cycleccc.github.io/docs/demo/index.html?lang=en) 
-- `mode: 'simple'` Only basic functions, but terse, see [demo](https://cycleccc.github.io/docs/demo/simple-mode.html?lang=en)
+- `mode: 'default'` Integrate all wangEditor functions, see [demo](https://cycleccc.github.io/demo/index.html?lang=en) 
+- `mode: 'simple'` Only basic functions, but terse, see [demo](https://cycleccc.github.io/demo/simple-mode.html?lang=en)
 :::
 
 With the simple code above, you will create a basic editor.

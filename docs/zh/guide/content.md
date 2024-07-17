@@ -6,7 +6,7 @@
 
 ### 获取 HTML 和 Text
 
-使用 `editor.getHtml()` 获取 HTML 内容，可参考 [demo](https://cycleccc.github.io/docs/demo/get-html.html)。使用 `editor.getText()` 获取纯文本内容。
+使用 `editor.getHtml()` 获取 HTML 内容，可参考 [demo](https://cycleccc.github.io/demo/get-html.html)。使用 `editor.getText()` 获取纯文本内容。
 
 推荐使用 HTML 格式存储数据。
 
@@ -26,10 +26,10 @@ const text = editor.getText()
 ### 自定义样式
 
 编辑器输出或者生成的 HTML 都是**纯标签**，没有内联样式。所以，显示 HTML 时需要你自定义样式。可参考以下示例
-- [显示 HTML](https://cycleccc.github.io/docs/demo/get-html.html)
-- [自定义样式](https://cycleccc.github.io/docs/demo/css/view.css)
+- [显示 HTML](https://cycleccc.github.io/demo/get-html.html)
+- [自定义样式](https://cycleccc.github.io/demo/css/view.css)
 
-另外，**代码高亮**也需要自行处理，推荐使用 [Prism.js](https://prismjs.com/) ，因为编辑器内容内部也是基于 Prism.js 来实现的。可参考 [demo](https://cycleccc.github.io/docs/demo/code-highlight.html)。
+另外，**代码高亮**也需要自行处理，推荐使用 [Prism.js](https://prismjs.com/) ，因为编辑器内容内部也是基于 Prism.js 来实现的。可参考 [demo](https://cycleccc.github.io/demo/code-highlight.html)。
 
 ## 设置内容
 
@@ -52,7 +52,7 @@ const editor = createEditor({
 
 #### 动态设置 HTML
 
-参考 [demo](https://cycleccc.github.io/docs/demo/set-html.html)
+参考 [demo](https://cycleccc.github.io/demo/set-html.html)
 
 ```js
 editor.setHtml('<p>hello <strong>world</strong></p>')

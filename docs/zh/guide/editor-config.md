@@ -54,12 +54,12 @@ editorConfig.scroll = false
 :::tip
 可将 scroll 设置为 `false` 的情况：
 - 编辑器高度自增
-- 在线文档，如腾讯文档、语雀那样的，参考 [demo](https://cycleccc.github.io/docs/demo/zh-CN/like-qq-doc.html) 中的“仿腾讯文档”
+- 在线文档，如腾讯文档、语雀那样的，参考 [demo](https://cycleccc.github.io/demo/zh-CN/like-qq-doc.html) 中的“仿腾讯文档”
 :::
 
 ## maxLength onMaxLength
 
-配置编辑器的 maxlength ，参考 [demo](https://cycleccc.github.io/docs/demo/max-length.html)。
+配置编辑器的 maxlength ，参考 [demo](https://cycleccc.github.io/demo/max-length.html)。
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'

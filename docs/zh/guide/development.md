@@ -20,7 +20,7 @@ core 是核心 API ，editor 负责汇总集成。所有的具体功能，都分
 
 ### ButtonMenu
 
-可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/demo/extend-menu.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -68,11 +68,11 @@ class MyButtonMenu implements IButtonMenu {   // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/demo/extend-menu.html)
 
 ### SelectMenu
 
-可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-select.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/demo/extend-menu-select.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -129,11 +129,11 @@ class MySelectMenu implements ISelectMenu {   // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-select.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/demo/extend-menu-select.html)
 
 ### DropPanelMenu
 
-可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-drop-panel.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/demo/extend-menu-drop-panel.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -197,11 +197,11 @@ class MyDropPanelMenu implements IDropPanelMenu {    // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](htthttps://cycleccc.github.io/docs/demo/extend-menu-drop-panel.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](htthttps://cycleccc.github.io/demo/extend-menu-drop-panel.html)
 
 ### ModalMenu
 
-可参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-modal.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
+可参考这个 [demo](https://cycleccc.github.io/demo/extend-menu-modal.html) 网页源码。在实际开发中，会用到很多 editor [API](./API.md) 。
 
 第一，定义菜单 class
 
@@ -272,7 +272,7 @@ class MyModalMenu implements IModalMenu {    // TS 语法
 
 第三，[插入菜单到工具栏](#插入菜单到工具栏)
 
-到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/docs/demo/extend-menu-modal.html)
+到此，自定义菜单就已经注册成功了，参考这个 [demo](https://cycleccc.github.io/demo/extend-menu-modal.html)
 
 #### 用 Vue React 组件实现 modal
 

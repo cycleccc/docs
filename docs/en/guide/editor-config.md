@@ -54,12 +54,12 @@ editorConfig.scroll = false
 :::tip
 When you need to set `false`?
 - Editor height increases automatically
-- Want a Google doc style, see [Demo](https://cycleccc.github.io/docs/demo/like-qq-doc.html?lang=en)
+- Want a Google doc style, see [Demo](https://cycleccc.github.io/demo/like-qq-doc.html?lang=en)
 :::
 
 ## maxLength onMaxLength
 
-See [demo](https://cycleccc.github.io/docs/demo/max-length.html?lang=en).
+See [demo](https://cycleccc.github.io/demo/max-length.html?lang=en).
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'
