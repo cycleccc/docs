@@ -7,7 +7,7 @@ titleTemplate: Open-source Web Rich Text Editor, Out of the Box, Easy to Configu
 hero:
   name: wangEditor-next
   text: Open-source Web Rich Text Editor, Out of the Box, Easy to Configure
-  tagline: Turn Markdown into Elegant Documents in Just a Few Minutes
+  tagline: Turn text into Elegant Documents in Just a Few Minutes
   actions:
     - theme: brand
       text: What is wangEditor-next?

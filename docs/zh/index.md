@@ -7,7 +7,7 @@ titleTemplate: 开源 Web 富文本编辑器，开箱即用，配置简单
 hero:
   name: wangEditor-next
   text: 开源 Web 富文本编辑器，开箱即用，配置简单
-  tagline: 将 Markdown 变成优雅的文档，只需几分钟
+  tagline: 将文本变成优雅的文档，只需几分钟
   actions:
     - theme: brand
       text: 什么是 wangEditor-next?
