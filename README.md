@@ -1,7 +1,6 @@
 # wangEditor v5 doc
 
 线上地址：https://cycleccc.github.io/docs/
-线上地址：https://cycleccc.github.io/docs/
 
 ## 本地开发
 
