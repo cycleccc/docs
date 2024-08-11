@@ -735,6 +735,16 @@ editorConfig.MENU_CONF['uploadVideo'] = {
 }
 ```
 
+## 表格
+
+- `minWidth` 单元格最小宽度
+
+```ts
+editorConfig.MENU_CONF['insertTable'] = {
+    minWidth: 60,
+}
+```
+
 ## 代码高亮
 
 - `codeLangs` 配置代码语言

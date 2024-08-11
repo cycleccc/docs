@@ -699,6 +699,16 @@ editorConfig.MENU_CONF['uploadVideo'] = {
 }
 ```
 
+## table
+
+- `minWidth` table cell min width
+
+```ts
+editorConfig.MENU_CONF['insertTable'] = {
+    minWidth: 60,
+}
+```
+
 ## Code Highlight
 
 ```ts
