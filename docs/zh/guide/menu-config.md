@@ -75,7 +75,6 @@ Vue Editor件可以使用 v-model 属性传入 HTML 内容，React Editor组件�
 
 - [Vue修改默认字体字号行高](https://codesandbox.io/p/sandbox/vue2-wangeditor-demo-forked-67fh5s)
 - [React修改默认字体字号行高](https://codesandbox.io/p/sandbox/react-wangeditor-defaultfont-59c48n)
-- [相关 issues](https://github.com/cycleccc/wangEditor/issues/4042)
 
 ## 颜色
 
