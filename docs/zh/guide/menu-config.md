@@ -49,7 +49,7 @@ editorConfig.MENU_CONF['otherMenuKey'] = {
 ```
 ### 修改默认配置
 
-修改默认字体、字号、行高
+#### 修改默认字体、字号、行高
 
 ```ts
     const jsonContent = [
@@ -75,6 +75,26 @@ Vue Editor件可以使用 v-model 属性传入 HTML 内容，React Editor组件�
 
 - [Vue修改默认字体字号行高](https://codesandbox.io/p/sandbox/vue2-wangeditor-demo-forked-67fh5s)
 - [React修改默认字体字号行高](https://codesandbox.io/p/sandbox/react-wangeditor-defaultfont-59c48n)
+
+#### 修改默认图标
+
+在 menu conf 中对对应的 toolbar 和 hoverbar key 加上 iconSvg 属性，填入对应的 svg 字符串
+Add the iconSvg attribute to the corresponding toolbar and hoverbar keys in the menu conf and fill in the corresponding svg string.
+
+~~~JavaScript
+MEEN_CONF = {
+  // toolbar 文字颜色 key
+  color: {
+    iconSvg:
+      '<svg viewBox="0 0 1024 1024"><path d="M0 64v896h1024V64H0z m384 576v-192h256v192h-256z m256 64v192h-256v-192h256z m0-512v192h-256V192h256zM320 192v192H64V192h256z m-256 256h256v192H64v-192z m640 0h256v192h-256v-192z m0-64V192h256v192h-256zM64 704h256v192H64v-192z m640 192v-192h256v192h-256z"></path></svg>'
+    ,
+  },
+  // hoverbar 图片宽度 key
+  imageWidth30: {
+    iconSvg: '<svg viewBox="0 0 1024 1024"><path d="M0 64v896h1024V64H0z m384 576v-192h256v192h-256z m256 64v192h-256v-192h256z m0-512v192h-256V192h256zM320 192v192H64V192h256z m-256 256h256v192H64v-192z m640 0h256v192h-256v-192z m0-64V192h256v192h-256zM64 704h256v192H64v-192z m640 192v-192h256v192h-256z"></path></svg>',
+  },
+}
+~~~
 
 ## 颜色
 
