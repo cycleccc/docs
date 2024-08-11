@@ -79,7 +79,6 @@ Vue Editor件可以使用 v-model 属性传入 HTML 内容，React Editor组件�
 #### 修改默认图标
 
 在 menu conf 中对对应的 toolbar 和 hoverbar key 加上 iconSvg 属性，填入对应的 svg 字符串
-Add the iconSvg attribute to the corresponding toolbar and hoverbar keys in the menu conf and fill in the corresponding svg string.
 
 ~~~JavaScript
 MEEN_CONF = {
