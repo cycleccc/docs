@@ -337,7 +337,7 @@ Boot.registerModule(module)
 
 ## 劫持编辑器事件和操作（插件）
 
-如[支持 markdown 语法](https://github.com/cycleccc/wangEditor-plugin-md)，以及 [ctrl + enter 回车](https://github.com/cycleccc/wangEditor-plugin-ctrl-enter)等。可参考它们的源码。
+如[支持 markdown 语法](https://github.com/cycleccc/wangEditor-next-plugin-md)，以及 [ctrl + enter 回车](https://github.com/cycleccc/wangEditor-plugin-ctrl-enter)等。可参考它们的源码。
 
 ### 定义插件
 

@@ -1,8 +1,8 @@
-import { createRequire } from 'module'
-import { defineConfig, type DefaultTheme } from 'vitepress'
+import { createRequire } from 'module';
+import { defineConfig, type DefaultTheme } from 'vitepress';
 
-const require = createRequire(import.meta.url)
-const pkg = require('@wangeditor-next/editor/package.json')
+const require = createRequire(import.meta.url);
+const pkg = require('@wangeditor-next/editor/package.json');
 
 export const zh = defineConfig({
     lang: 'zh-Hans',
@@ -16,30 +16,31 @@ export const zh = defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
-            text: '在 GitHub 上编辑此页面'
+            pattern:
+                'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
+            text: '在 GitHub 上编辑此页面',
         },
 
         footer: {
             message: '基于 MIT 许可发布',
-            copyright: `版权所有 © 2024-${ new Date().getFullYear() } 姚龙飞`
+            copyright: `版权所有 © 2024-${new Date().getFullYear()} 姚龙飞`,
         },
 
         docFooter: {
             prev: '上一页',
-            next: '下一页'
+            next: '下一页',
         },
 
         outline: {
-            label: '页面导航'
+            label: '页面导航',
         },
 
         lastUpdated: {
             text: '最后更新于',
             formatOptions: {
                 dateStyle: 'short',
-                timeStyle: 'medium'
-            }
+                timeStyle: 'medium',
+            },
         },
 
         langMenuLabel: '多语言',
@@ -47,31 +48,35 @@ export const zh = defineConfig({
         sidebarMenuLabel: '菜单',
         darkModeSwitchLabel: '主题',
         lightModeSwitchTitle: '切换到浅色模式',
-        darkModeSwitchTitle: '切换到深色模式'
-    }
-})
+        darkModeSwitchTitle: '切换到深色模式',
+    },
+});
 
 function nav(): DefaultTheme.NavItem[] {
     return [
         {
             text: '指南',
-            link: '/zh/guide/getting-started',
-            activeMatch: '/zh/guide/'
+            link: '/guide/getting-started',
+            activeMatch: '/zh/guide/',
+        },
+        {
+            text: '示例',
+            link: 'https://cycleccc.github.io/demo/',
         },
         {
             text: pkg.version,
             items: [
                 {
                     text: '更新日志',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CHANGELOG.md'
+                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CHANGELOG.md',
                 },
                 {
                     text: '参与贡献',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CONTRIBUTING.md'
-                }
-            ]
-        }
-    ]
+                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CONTRIBUTING.md',
+                },
+            ],
+        },
+    ];
 }
 
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
@@ -93,7 +98,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 { text: '快速开始', link: '/getting-started' },
                 { text: '用于 Vue React', link: '/for-frame' },
                 { text: '内容处理', link: '/content' },
-            ]
+            ],
         },
         {
             text: '配置和 API',
@@ -103,7 +108,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 { text: '编辑器配置', link: '/editor-config' },
                 { text: '菜单配置', link: '/menu-config' },
                 { text: '编辑器 API', link: '/API' },
-            ]
+            ],
         },
         {
             text: '高级',
@@ -115,16 +120,14 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 { text: '主题', link: '/theme' },
                 { text: '用于 Typescript', link: '/for-ts' },
                 { text: '插件', link: '/plugins' },
-            ]
+            ],
         },
         {
             text: '资源',
             collapsed: false,
-            items: [
-                { text: '视频教程', link: '/video-course' }
-            ]
-        }
-    ]
+            items: [{ text: '视频教程', link: '/video-course' }],
+        },
+    ];
 }
 
 export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
@@ -133,14 +136,14 @@ export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
         translations: {
             button: {
                 buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
+                buttonAriaLabel: '搜索文档',
             },
             modal: {
                 searchBox: {
                     resetButtonTitle: '清除查询条件',
                     resetButtonAriaLabel: '清除查询条件',
                     cancelButtonText: '取消',
-                    cancelButtonAriaLabel: '取消'
+                    cancelButtonAriaLabel: '取消',
                 },
                 startScreen: {
                     recentSearchesTitle: '搜索历史',
@@ -148,25 +151,25 @@ export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
                     saveRecentSearchButtonTitle: '保存至搜索历史',
                     removeRecentSearchButtonTitle: '从搜索历史中移除',
                     favoriteSearchesTitle: '收藏',
-                    removeFavoriteSearchButtonTitle: '从收藏中移除'
+                    removeFavoriteSearchButtonTitle: '从收藏中移除',
                 },
                 errorScreen: {
                     titleText: '无法获取结果',
-                    helpText: '你可能需要检查你的网络连接'
+                    helpText: '你可能需要检查你的网络连接',
                 },
                 footer: {
                     selectText: '选择',
                     navigateText: '切换',
                     closeText: '关闭',
-                    searchByText: '搜索提供者'
+                    searchByText: '搜索提供者',
                 },
                 noResultsScreen: {
                     noResultsText: '无法找到相关结果',
                     suggestedQueryText: '你可以尝试查询',
                     reportMissingResultsText: '你认为该查询应该有结果？',
-                    reportMissingResultsLinkText: '点击反馈'
-                }
-            }
-        }
-    }
-}
+                    reportMissingResultsLinkText: '点击反馈',
+                },
+            },
+        },
+    },
+};

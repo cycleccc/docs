@@ -60,6 +60,10 @@ function nav(): DefaultTheme.NavItem[] {
             activeMatch: '/en/guide/',
         },
         {
+            text: 'demo',
+            link: 'https://cycleccc.github.io/demo/',
+        },
+        {
             text: pkg.version,
             items: [
                 {

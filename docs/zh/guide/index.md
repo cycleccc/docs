@@ -76,7 +76,7 @@ wangEditor 从 V5 版本开始，有较大的技术更新。
 
 ### 中文文档
 
-wangEditor 有详细的中文文档，以及中文交流环境。因为[作者](https://github.com/wangfupeng1988)就是国内程序员。
+wangEditor 有详细的中文文档，以及中文交流环境。因为[作者](https://github.com/cycleccc)就是国内程序员。
 
 ### 及时反馈和沟通
 

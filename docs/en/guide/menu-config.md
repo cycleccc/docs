@@ -43,7 +43,7 @@ editorConfig.MENU_CONF['otherMenuKey'] = {
 ```
 ### change the default Menu Conifg
 
-Change the default font, font size, and line height
+#### Change the default font, font size, and line height
 
 ```ts
     const jsonContent = [
@@ -69,7 +69,25 @@ The Vue Editor component can use the v-model attribute to pass in HTML content, 
 
 - [Vue changes the default font size and line height](https://codesandbox.io/p/sandbox/vue2-wangeditor-demo-forked-67fh5s)
 - [React changes the default font size and line height](https://codesandbox.io/p/sandbox/react-wangeditor-defaultfont-59c48n)
-- [Related issues](https://github.com/cycleccc/wangEditor/issues/4042)
+
+#### change the defalut icon
+
+Add the iconSvg attribute to the corresponding toolbar and hoverbar keys in the menu conf and fill in the corresponding svg string.
+
+~~~JavaScript
+MEEN_CONF = {
+  // toolbar text color key
+  color: {
+    iconSvg:
+      '<svg viewBox="0 0 1024 1024"><path d="M0 64v896h1024V64H0z m384 576v-192h256v192h-256z m256 64v192h-256v-192h256z m0-512v192h-256V192h256zM320 192v192H64V192h256z m-256 256h256v192H64v-192z m640 0h256v192h-256v-192z m0-64V192h256v192h-256zM64 704h256v192H64v-192z m640 192v-192h256v192h-256z"></path></svg>'
+    ,
+  },
+  // hoverbar image width key
+  imageWidth30: {
+    iconSvg: '<svg viewBox="0 0 1024 1024"><path d="M0 64v896h1024V64H0z m384 576v-192h256v192h-256z m256 64v192h-256v-192h256z m0-512v192h-256V192h256zM320 192v192H64V192h256z m-256 256h256v192H64v-192z m640 0h256v192h-256v-192z m0-64V192h256v192h-256zM64 704h256v192H64v-192z m640 192v-192h256v192h-256z"></path></svg>',
+  },
+}
+~~~
 
 ## Color
 
@@ -697,6 +715,16 @@ editorConfig.MENU_CONF['uploadVideo'] = {
         // 3. insert video
         insertFn(url, poster)
     }
+}
+```
+
+## table
+
+- `minWidth` table cell min width
+
+```ts
+editorConfig.MENU_CONF['insertTable'] = {
+    minWidth: 60,
 }
 ```
 
