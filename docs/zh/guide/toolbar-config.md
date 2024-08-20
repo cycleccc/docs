@@ -27,8 +27,11 @@ import { DomEditor } from '@wangeditor-next/editor'
 const toolbar = DomEditor.getToolbar(editor)
 
 const curToolbarConfig = toolbar.getConfig()
-console.log( curToolbarConfig.toolbarKeys ) // 当前菜单排序和分组
+console.log(curToolbarConfig.toolbarKeys) // 当前菜单排序和分组
 ```
+:::tip
+在 editor.onCreated 生命周期中 toolbar 实例还没创建好，所以不能在 created 中获取 toolbar 实例。
+:::
 
 ## toolbarKeys
 
@@ -39,23 +42,24 @@ console.log( curToolbarConfig.toolbarKeys ) // 当前菜单排序和分组
 
 ```ts
 toolbarConfig.toolbarKeys = [
-    // 菜单 key
-    'headerSelect',
+  // 菜单 key
+  'headerSelect',
 
-    // 分割线
-    '|',
+  // 分割线
+  '|',
 
-    // 菜单 key
-    'bold', 'italic',
+  // 菜单 key
+  'bold',
+  'italic',
 
-    // 菜单组，包含多个菜单
-    {
-        key: 'group-more-style', // 必填，要以 group 开头
-        title: '更多样式', // 必填
-        iconSvg: '<svg>....</svg>', // 可选
-        menuKeys: ["through", "code", "clearStyle"] // 下级菜单 key ，必填
-    },
-    // 继续配置其他菜单...
+  // 菜单组，包含多个菜单
+  {
+    key: 'group-more-style', // 必填，要以 group 开头
+    title: '更多样式', // 必填
+    iconSvg: '<svg>....</svg>', // 可选
+    menuKeys: ['through', 'code', 'clearStyle'] // 下级菜单 key ，必填
+  },
+  // 继续配置其他菜单...
 ]
 ```
 
@@ -65,8 +69,8 @@ toolbarConfig.toolbarKeys = [
 
 ```ts
 toolbarConfig.insertKeys = {
-    index: 5, // 插入的位置，基于当前的 toolbarKeys
-    keys: ['menu-key1', 'menu-key2']
+  index: 5, // 插入的位置，基于当前的 toolbarKeys
+  keys: ['menu-key1', 'menu-key2']
 }
 ```
 
@@ -77,9 +81,9 @@ toolbarConfig.insertKeys = {
 
 ```ts
 toolbarConfig.excludeKeys = [
-    'headerSelect',
-    'italic',
-    'group-more-style' // 排除菜单组，写菜单组 key 的值即可
+  'headerSelect',
+  'italic',
+  'group-more-style' // 排除菜单组，写菜单组 key 的值即可
 ]
 ```
 

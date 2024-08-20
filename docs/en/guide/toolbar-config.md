@@ -32,23 +32,24 @@ const toolbar = DomEditor.getToolbar(editor)
 
 ```ts
 toolbarConfig.toolbarKeys = [
-    // menu key
-    'headerSelect',
+  // menu key
+  'headerSelect',
 
-    // split line
-    '|',
+  // split line
+  '|',
 
-    // menu key
-    'bold', 'italic',
+  // menu key
+  'bold',
+  'italic',
 
-    // menu group, includes many menu
-    {
-        key: 'group-more-style', // required, must start with `group-`
-        title: 'more', // required
-        iconSvg: '<svg>....</svg>', // optional
-        menuKeys: ["through", "code", "clearStyle"] // required, children menu keys
-    },
-    // other menu keys...
+  // menu group, includes many menu
+  {
+    key: 'group-more-style', // required, must start with `group-`
+    title: 'more', // required
+    iconSvg: '<svg>....</svg>', // optional
+    menuKeys: ['through', 'code', 'clearStyle'] // required, children menu keys
+  },
+  // other menu keys...
 ]
 ```
 
@@ -58,13 +59,17 @@ You may only want to exclude some menus, and keep the rest.
 
 ```ts
 toolbarConfig.excludeKeys = [
-    'headerSelect',
-    'italic',
-    'group-more-style' // exclude menu-group
+  'headerSelect',
+  'italic',
+  'group-more-style' // exclude menu-group
 ]
 ```
 
 If you want to exclude a menu group, you can find it's key by `toolbar.getConfig().toolbarKeys`
+
+:::tip
+In the editor.onCreated life cycle, the toolbar instance has not been created yet, so the toolbar instance cannot be obtained in created.
+:::
 
 ![](/image/exclude-group-en.png)
 
