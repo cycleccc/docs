@@ -13,7 +13,7 @@
         "vdom",
         "vite",
         "vnode",
-        "vuepress",
+        "vitepress",
         "wangeditor"
     ],
   // Disable the default formatter, use eslint instead

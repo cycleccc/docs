@@ -6,7 +6,7 @@
 
 使用 [VitePress](https://vitepress.dev/zh/) 搭建的文档。
 
-全局安装 vuepress `npm install vitepress -g`
+全局安装 vitepress `npm install vitepress -g`
 
 下载当前代码，然后启动
 
