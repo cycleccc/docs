@@ -58,7 +58,6 @@ export const shared = defineConfig({
                 locales: { ...zhSearch }
             }
         },
-
-        carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
+        
     },
 })
