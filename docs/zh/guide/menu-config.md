@@ -757,22 +757,33 @@ editorConfig.MENU_CONF['uploadVideo'] = {
 ## 表格
 
 - `minWidth` 单元格最小宽度
+- `tableHeader` 表头
+- `tableFullWidth` 表格宽度自适应
 
 ```ts
 editorConfig.MENU_CONF['insertTable'] = {
     minWidth: 60,
+    // 表头
+    tableHeader: {
+        selected: false, // 默认不启用表头
+    },
+    // 表格宽度自适应
+    tableFullWidth: {
+        selected: true, // 默认启用表格宽度自适应
+    },
 }
 ```
 
 ## 代码高亮
 
 - `codeLangs` 配置代码语言
+- `selected: true` 配置代码块默认语言 **(可选)**
 
 ```ts
 editorConfig.MENU_CONF['codeSelectLang'] = {
     // 代码语言
     codeLangs: [
-        { text: 'CSS', value: 'css' },
+        { text: 'CSS', value: 'css', selected: true }, 
         { text: 'HTML', value: 'html' },
         { text: 'XML', value: 'xml' },
         // 其他

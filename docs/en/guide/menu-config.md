@@ -721,19 +721,32 @@ editorConfig.MENU_CONF['uploadVideo'] = {
 ## table
 
 - `minWidth` table cell min width
+- `tableHeader` table header
+- `tableFullWidth` table width adaptation
 
 ```ts
 editorConfig.MENU_CONF['insertTable'] = {
     minWidth: 60,
+    // Table header
+    tableHeader: {
+        selected: false, // Do not enable the table header by default
+    },
+    // Table width adaptation
+    tableFullWidth: {
+        selected: true, // By default enable form width adaptation
+    },
 }
 ```
 
 ## Code Highlight
 
+- `codeLangs` configure code language
+- `selected: true` configure code block default language **(optional)**
+
 ```ts
 editorConfig.MENU_CONF['codeSelectLang'] = {
     codeLangs: [
-        { text: 'CSS', value: 'css' },
+        { text: 'CSS', value: 'css', selected: true },
         { text: 'HTML', value: 'html' },
         { text: 'XML', value: 'xml' },
         // others...
