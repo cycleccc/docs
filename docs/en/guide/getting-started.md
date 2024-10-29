@@ -19,6 +19,17 @@ You can see [demo](https://cycleccc.github.io/demo/index.html?lang=en) page sour
   #editor-container { height: 500px; }
 </style>
 ```
+### customize elements style
+
+```html
+<style>
+  /* Matches all elements whose id starts with "w-e-element-paragraph-" */
+  [id^="w-e-element-paragraph-"] {
+  /* example style */
+  border:  solid #000;
+  }
+</style>
+```
 
 ### Define Html Code
 

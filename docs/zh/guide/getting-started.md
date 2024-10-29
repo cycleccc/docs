@@ -21,6 +21,17 @@
   #editor-container { height: 500px; }
 </style>
 ```
+### 自定义元素样式
+
+```html
+<style>
+  /* 匹配所有 id 以 "w-e-element-paragraph-" 开头的元素 */
+  [id^="w-e-element-paragraph-"] {
+  /* 示例样式 */
+  border:  solid #000;
+  }
+</style>
+```
 
 ### 定义 HTML 结构
 
