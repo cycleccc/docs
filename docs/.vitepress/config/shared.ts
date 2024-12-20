@@ -33,8 +33,8 @@ export const shared = defineConfig({
 
     /* prettier-ignore */
     head: [
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/image/logo.png' }],
-        ['link', { rel: 'icon', type: 'image/png', href: '/image/logo.png' }],
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/docs/image/logo.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: '/docs/image/logo.png' }],
         ['meta', { name: 'theme-color', content: '#5f67ee' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'en' }],
