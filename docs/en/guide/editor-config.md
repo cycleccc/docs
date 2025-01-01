@@ -223,7 +223,7 @@ editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean 
 
 ## customCopy
 
-Custom paste can modify the editor's paste results.
+Custom copy can modify the editor's copy results.
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'
