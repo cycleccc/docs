@@ -230,7 +230,7 @@ editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean 
 
 ## customCopy
 
-自定义粘贴，可修改编辑器的粘贴结果。
+自定义复制，可修改编辑器的复制结果。
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'
