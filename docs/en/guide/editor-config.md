@@ -221,6 +221,26 @@ editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean 
 }
 ```
 
+## customCopy
+
+Custom paste can modify the editor's paste results.
+
+```ts
+import { IDomEditor } from '@wangeditor-next/editor'
+
+editorConfig.customCopy = (editor: IDomEditor, event: ClipboardEvent): void => {     // TS syntax
+// editorConfig.customCooy = (editor, event) => {                                       // JS syntax
+    const originalText = event.clipboardData.getData('text/plain');
+    const originalHtml = event.clipboardData.getData('text/html');
+   // Modify or expand content
+    const modifiedText = `${originalText}\n---\nAdded text`;
+    const modifiedHtml = `${originalHtml}<hr><p>Added HTML content</p>`;
+    // Write the modified content back to the clipboard
+    event.clipboardData.setData('text/plain', modifiedText);
+    event.clipboardData.setData('text/html', modifiedHtml);
+}
+```
+
 ## customAlert
 
 Redefine your custom editor alert.
