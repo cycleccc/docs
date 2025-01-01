@@ -228,6 +228,26 @@ editorConfig.customPaste = (editor: IDomEditor, event: ClipboardEvent): boolean 
 }
 ```
 
+## customCopy
+
+自定义粘贴，可修改编辑器的粘贴结果。
+
+```ts
+import { IDomEditor } from '@wangeditor-next/editor'
+
+editorConfig.customCopy = (editor: IDomEditor, event: ClipboardEvent): void => {     // TS 语法
+// editorConfig.customCooy = (editor, event) => {                                       // JS 语法
+    const originalText = event.clipboardData.getData('text/plain');
+    const originalHtml = event.clipboardData.getData('text/html');
+   // 修改或扩展内容
+    const modifiedText = `${originalText}\n---\n添加的文本`;
+    const modifiedHtml = `${originalHtml}<hr><p>添加的HTML内容</p>`;
+    // 将修改后的内容写回剪贴板
+    event.clipboardData.setData('text/plain', modifiedText);
+    event.clipboardData.setData('text/html', modifiedHtml);
+}
+```
+
 ## customAlert
 
 自定义编辑器 alert 。如想用 antd 的 message 功能。
