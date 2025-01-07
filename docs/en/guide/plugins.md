@@ -6,3 +6,4 @@
 - [Markdown](https://github.com/cycleccc/wangEditor-next-plugin-md/blob/main/README-en.md)
 - [Upload attachment](https://github.com/cycleccc/wangEditor-plugin-upload-attachment/blob/main/README-en.md)
 - [Link card](https://github.com/cycleccc/wangEditor-plugin-link-card/blob/main/README-en.md)
+- [Import From Word](https://github.com/yutons3112/wangEditor-next-plugin-import-from-word)
