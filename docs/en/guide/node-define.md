@@ -15,7 +15,7 @@ This article will tell you all of the node types and props, so you can do everyt
 ## Getting Started
 
 If you want to know a node structure quickly, it's very simply.
-- Create an editor and run in browser, or use [demo](https://cycleccc.github.io/demo/index.html?lang=en)
+- Create an editor and run in browser, or use [demo](https://wangeditor-next.github.io/demo/index.html?lang=en)
 - Do something, like: bold, set color, set header ...
 - Run `editor.children` in browser's console
 
@@ -41,13 +41,13 @@ An element node **must have two props `type` and `children`** , like `{ type: 'h
 
 By default, an element node is **block** style, like `<div>` in HTML. But we want some elements are **inline** style, like `<img>` `<a>` .
 
-We can define an element node as `inline` by **rewrite editor `isInline` API**, see link element [plugin source code](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/link/plugin.ts).
+We can define an element node as `inline` by **rewrite editor `isInline` API**, see link element [plugin source code](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/link/plugin.ts).
 
 ## Void Element
 
 By default, an element node is not void node, it can have children. But we want some elements ar `void` node, like `<img>` `<video>` .
 
-We can define an element node as `void` by **rewrite editor `isVoid` API**, see image element [plugin source code](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/image/plugin.ts).
+We can define an element node as `void` by **rewrite editor `isVoid` API**, see image element [plugin source code](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/image/plugin.ts).
 
 Void element must have a `children` prop, which involve an empty text node. A image element is like:
 
@@ -63,20 +63,20 @@ Void element must have a `children` prop, which involve an empty text node. A im
 
 See `type` in every source code.
 
-- [Text style](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/text-style/custom-types.ts) - Extend text node props
-- [Font color and background color](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/color/custom-types.ts) - Extend text node props
-- [Paragraph](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/paragraph/custom-types.ts) - Define element node
-- [Line height](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/line-height/custom-types.ts) - Extend element node props
-- [Font size and family](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/font-size-family/custom-types.ts) - Extend text node props
-- [Justify](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/justify/custom-types.ts) - Extend element node props
-- [indent](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/indent/custom-types.ts) - Extend element node props
-- [Link](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/link/custom-types.ts) - Define **inline** element
-- [Header](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/header/custom-types.ts) - Define element node
-- [Blockquote](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/blockquote/custom-types.ts) - Define element node
-- [Image](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/image/custom-types.ts) - Define **inline and void** element
-- [Split line](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/divider/custom-types.ts) - Define **void** element
-- [Code block](https://github.com/cycleccc/wangEditor/blob/master/packages/basic-modules/src/modules/code-block/custom-types.ts) - Define element node
-- [List](https://github.com/cycleccc/wangEditor/blob/master/packages/list-module/src/module/custom-types.ts) - Define element node
-- [Table](https://github.com/cycleccc/wangEditor/blob/master/packages/table-module/src/module/custom-types.ts) - Define element node
-- [Video](https://github.com/cycleccc/wangEditor/blob/master/packages/video-module/src/module/custom-types.ts) - Define **void** element
+- [Text style](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/text-style/custom-types.ts) - Extend text node props
+- [Font color and background color](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/color/custom-types.ts) - Extend text node props
+- [Paragraph](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/paragraph/custom-types.ts) - Define element node
+- [Line height](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/line-height/custom-types.ts) - Extend element node props
+- [Font size and family](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/font-size-family/custom-types.ts) - Extend text node props
+- [Justify](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/justify/custom-types.ts) - Extend element node props
+- [indent](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/indent/custom-types.ts) - Extend element node props
+- [Link](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/link/custom-types.ts) - Define **inline** element
+- [Header](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/header/custom-types.ts) - Define element node
+- [Blockquote](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/blockquote/custom-types.ts) - Define element node
+- [Image](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/image/custom-types.ts) - Define **inline and void** element
+- [Split line](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/divider/custom-types.ts) - Define **void** element
+- [Code block](https://github.com/wangeditor-next/wangEditor/blob/master/packages/basic-modules/src/modules/code-block/custom-types.ts) - Define element node
+- [List](https://github.com/wangeditor-next/wangEditor/blob/master/packages/list-module/src/module/custom-types.ts) - Define element node
+- [Table](https://github.com/wangeditor-next/wangEditor/blob/master/packages/table-module/src/module/custom-types.ts) - Define element node
+- [Video](https://github.com/wangeditor-next/wangEditor/blob/master/packages/video-module/src/module/custom-types.ts) - Define **void** element
 

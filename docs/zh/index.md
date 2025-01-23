@@ -17,7 +17,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/cycleccc/wangEditor-next
+      link: https://github.com/wangeditor-next/wangEditor-next
   image:
       src: /image/logo.png
       alt: wangEditor-next

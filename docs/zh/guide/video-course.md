@@ -19,7 +19,7 @@
 - [wangEditor5教程12-自定义扩展 part1（视频较长，耐心观看）](https://www.bilibili.com/video/BV17t4y1L71C)
 - [wangEditor5教程13-自定义扩展 part2（视频较长，耐心观看）](https://www.bilibili.com/video/BV16Y4y1A7iM/)
 
-如需要其他视频教程，可去提交 [issue](https://github.com/cycleccc/wangEditor/issues) 反馈。
+如需要其他视频教程，可去提交 [issue](https://github.com/wangeditor-next/wangEditor/issues) 反馈。
 
 ## 作者抖音
 

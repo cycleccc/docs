@@ -6,7 +6,7 @@ If you first-time use wangEditor, please see [Get started](./getting-started.md)
 
 ### Demo
 
-- [Demo source](https://github.com/cycleccc/vue2-wangeditor-demo)
+- [Demo source](https://github.com/wangeditor-next/vue2-wangeditor-demo)
 - [Online demo](https://stackblitz.com/edit/vue2-vite-starter-hkmsif)
 
 ### Installation
@@ -183,7 +183,7 @@ methods: {
 
 ### Demo
 
-- [Demo source](https://github.com/cycleccc/vue3-wangeditor-demo)
+- [Demo source](https://github.com/wangeditor-next/vue3-wangeditor-demo)
 - [Online demo](https://stackblitz.com/edit/vue3-wangeditor-demo-8emmc7)
 
 ### Installation
@@ -380,7 +380,7 @@ return {
 
 ### Demo
 
-- [Demo source](https://github.com/cycleccc/react-wangeditor-demo)
+- [Demo source](https://github.com/wangeditor-next/react-wangeditor-demo)
 - [Online demo](https://stackblitz.com/edit/react-4osjqn)
 
 ### Installation

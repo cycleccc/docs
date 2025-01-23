@@ -49,7 +49,7 @@ export const shared = defineConfig({
         logo: { src: '/image/logo.png', width: 24, height: 24 },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/cycleccc/wangEditor-next' }
+            { icon: 'github', link: 'https://github.com/wangeditor-next/wangEditor-next' }
         ],
 
         search: {

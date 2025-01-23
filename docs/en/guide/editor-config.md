@@ -54,12 +54,12 @@ editorConfig.scroll = false
 :::tip
 When you need to set `false`?
 - Editor height increases automatically
-- Want a Google doc style, see [Demo](https://cycleccc.github.io/demo/like-qq-doc.html?lang=en)
+- Want a Google doc style, see [Demo](https://wangeditor-next.github.io/demo/like-qq-doc.html?lang=en)
 :::
 
 ## maxLength onMaxLength
 
-See [demo](https://cycleccc.github.io/demo/max-length.html?lang=en).
+See [demo](https://wangeditor-next.github.io/demo/max-length.html?lang=en).
 
 ```ts
 import { IDomEditor } from '@wangeditor-next/editor'
@@ -128,7 +128,7 @@ editorConfig.hoverbarKeys = {
 }
 ```
 
-You can see [source code](https://github.com/cycleccc/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts) of all default hoverbar keys config.
+You can see [source code](https://github.com/wangeditor-next/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts) of all default hoverbar keys config.
 
 ## onCreated
 
@@ -272,4 +272,4 @@ editorConfig.customAlert = (s: string, t: string) => {   // TS syntax
 
 ## EXTEND_CONF
 
-Use in third-party plugin, like [mention plugin](https://github.com/cycleccc/wangEditor-plugin-mention/blob/main/README-en.md).
+Use in third-party plugin, like [mention plugin](https://github.com/wangeditor-next/wangEditor-plugin-mention/blob/main/README-en.md).

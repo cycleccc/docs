@@ -17,7 +17,7 @@ export const en = defineConfig({
 
         editLink: {
             pattern:
-                'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
+                'https://github.com/wangeditor-next/wangeditor-v5-doc/tree/main/docs/:path',
             text: 'Edit this page on GitHub',
         },
 
@@ -61,18 +61,18 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: 'demo',
-            link: 'https://cycleccc.github.io/demo/',
+            link: 'https://wangeditor-next.github.io/demo/',
         },
         {
             text: pkg.version,
             items: [
                 {
                     text: 'Changelog',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CHANGELOG.md',
+                    link: 'https://github.com/wangeditor-next/wangEditor-next/blob/master/CHANGELOG.md',
                 },
                 {
                     text: 'Contributing',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CONTRIBUTING.md',
+                    link: 'https://github.com/wangeditor-next/wangEditor-next/blob/master/CONTRIBUTING.md',
                 },
             ],
         },

@@ -6,7 +6,7 @@
 
 ### Demo
 
-- [Demo 源码](https://github.com/cycleccc/vue2-wangeditor-demo)
+- [Demo 源码](https://github.com/wangeditor-next/vue2-wangeditor-demo)
 - [在线 demo](https://stackblitz.com/edit/vue2-vite-starter-hkmsif)
 
 ### 安装
@@ -183,7 +183,7 @@ methods: {
 
 ### Demo
 
-- [Demo 源码](https://github.com/cycleccc/vue3-wangeditor-demo)
+- [Demo 源码](https://github.com/wangeditor-next/vue3-wangeditor-demo)
 - [在线 demo](https://stackblitz.com/edit/vue3-wangeditor-demo-8emmc7)
 
 ### 安装
@@ -378,7 +378,7 @@ return {
 
 ### Demo
 
-- [Demo 源码](https://github.com/cycleccc/react-wangeditor-demo)
+- [Demo 源码](https://github.com/wangeditor-next/react-wangeditor-demo)
 - [在线 demo](https://stackblitz.com/edit/react-4osjqn)
 
 ### 安装

@@ -17,7 +17,7 @@ export const zh = defineConfig({
 
         editLink: {
             pattern:
-                'https://github.com/cycleccc/wangeditor-v5-doc/tree/main/docs/:path',
+                'https://github.com/wangeditor-next/wangeditor-v5-doc/tree/main/docs/:path',
             text: '在 GitHub 上编辑此页面',
         },
 
@@ -61,18 +61,18 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: '示例',
-            link: 'https://cycleccc.github.io/demo/',
+            link: 'https://wangeditor-next.github.io/demo/',
         },
         {
             text: pkg.version,
             items: [
                 {
                     text: '更新日志',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CHANGELOG.md',
+                    link: 'https://github.com/wangeditor-next/wangEditor-next/blob/master/CHANGELOG.md',
                 },
                 {
                     text: '参与贡献',
-                    link: 'https://github.com/cycleccc/wangEditor-next/blob/master/CONTRIBUTING.md',
+                    link: 'https://github.com/wangeditor-next/wangEditor-next/blob/master/CONTRIBUTING.md',
                 },
             ],
         },
