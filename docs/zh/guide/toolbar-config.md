@@ -115,4 +115,4 @@ editor.on('modalOrPanelHide', () => {
 })
 ```
 
-上述代码细节可以参考 [example 源码](https://github.com/wangeditor-next/wangEditor/blob/master/packages/editor/examples/modal-appendTo-body.html)
+上述代码细节可以参考 [example 源码](https://github.com/wangeditor-next/wangEditor-next/blob/master/packages/editor/examples/modal-appendTo-body.html)

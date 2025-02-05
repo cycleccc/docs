@@ -126,7 +126,7 @@ editorConfig.hoverbarKeys = {
 }
 ```
 
-可参考 hoverbar 配置的[源码](https://github.com/wangeditor-next/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts)。
+可参考 hoverbar 配置的[源码](https://github.com/wangeditor-next/wangEditor-next/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts)。
 
 ## onCreated
 
