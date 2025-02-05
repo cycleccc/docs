@@ -111,7 +111,7 @@ wangEditor 基于 slate 内核开发，但不依赖于 React ，所以它本身�
 
 ### 踩过 5000 个坑
 
-wangEditor 开源多年，大量用户使用和反馈，已经解决了[很多问题](https://github.com/wangeditor-next/wangEditor/issues)。在 V5 版本测试过程中，也这些问题进行了重复测试，最大程度保证稳定性。
+wangEditor 开源多年，大量用户使用和反馈，已经解决了[很多问题](https://github.com/wangeditor-next/wangEditor-next/issues)。在 V5 版本测试过程中，也这些问题进行了重复测试，最大程度保证稳定性。
 
 ### 团队作业，持续迭代升级
 

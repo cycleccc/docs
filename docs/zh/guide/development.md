@@ -281,7 +281,7 @@ class MyModalMenu implements IModalMenu {    // TS 语法
 - 不用 ModalMenu ，改用最简单的 ButtonMenu
 - 在 `exec` 函数中通过自定义事件（或其他方式）来控制 modal 组件的显示和隐藏
 
-可再参考这个分享：[在 React 中更方便的扩展 Menu ，替代原有的 ModalMenu 方案](https://github.com/wangeditor-next/wangEditor/issues/4598)
+可再参考这个分享：[在 React 中更方便的扩展 Menu ，替代原有的 ModalMenu 方案](https://github.com/wangeditor-team/wangEditor/issues/4598)
 
 ### 注册菜单到 wangEditor
 

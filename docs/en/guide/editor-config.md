@@ -128,7 +128,7 @@ editorConfig.hoverbarKeys = {
 }
 ```
 
-You can see [source code](https://github.com/wangeditor-next/wangEditor/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts) of all default hoverbar keys config.
+You can see [source code](https://github.com/wangeditor-next/wangEditor-next/blob/master/packages/editor/src/init-default-config/config/hoverbar.ts) of all default hoverbar keys config.
 
 ## onCreated
 
