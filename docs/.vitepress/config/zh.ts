@@ -17,7 +17,7 @@ export const zh = defineConfig({
 
         editLink: {
             pattern:
-                'https://github.com/wangeditor-next/wangeditor-v5-doc/tree/main/docs/:path',
+                'https://github.com/wangeditor-next/docs/tree/main/docs/:path',
             text: '在 GitHub 上编辑此页面',
         },
 
